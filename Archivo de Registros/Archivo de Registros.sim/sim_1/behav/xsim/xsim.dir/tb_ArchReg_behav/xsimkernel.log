@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_ArchReg_behav/xsimk -simmode gui -wdb tb_ArchReg_behav.wdb -simrunnum 0 -socket 53301
+Design successfully loaded
+Design Loading Memory Usage: 209008 KB (Peak: 209060 KB)
+Design Loading CPU Usage: 480 ms
+Simulation completed
+Simulation Memory Usage: 294844 KB (Peak: 348276 KB)
+Simulation CPU Usage: 480 ms

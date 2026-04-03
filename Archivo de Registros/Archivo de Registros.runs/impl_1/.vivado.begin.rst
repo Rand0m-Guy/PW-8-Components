@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="10279" HostCore="12" HostMemory="31913344">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="7575" HostCore="12" HostMemory="31913344">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="15122" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="16939" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="18469" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="19359" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="20903" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="24326" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="randomguy" Host="pop-os" Pid="25860" HostCore="12" HostMemory="31913340">
+    </Process>
+</ProcessHandle>

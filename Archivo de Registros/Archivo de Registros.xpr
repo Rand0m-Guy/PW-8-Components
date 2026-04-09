@@ -109,8 +109,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/../../../../../Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc"/>
+          <Attr Name="ImportTime" Val="1775016028"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

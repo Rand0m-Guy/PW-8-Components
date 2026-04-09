@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1775016035" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ArchReg.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="ArchReg_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ArchReg.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="ArchReg_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="ArchReg_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="ArchReg_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="ArchReg.vds"/>
   <File Type="REPORTS-TCL" Name="ArchReg_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="ArchReg_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="ArchReg.tcl"/>
+  <File Type="RDS-UTIL" Name="ArchReg_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ArchReg_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/RV8Integer.vhd">
@@ -31,8 +28,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../../../Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc"/>
+        <Attr Name="ImportTime" Val="1775016028"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

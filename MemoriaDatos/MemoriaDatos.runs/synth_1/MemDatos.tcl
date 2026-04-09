@@ -71,10 +71,7 @@ set_property ip_output_repo /home/randomguy/Documents/School/TT/Vivado/MemoriaDa
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.srcs/sources_1/new/RV8Integer.vhd
-  /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.srcs/sources_1/new/MemDatos.vhd
-}
+read_vhdl -library xil_defaultlib /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.srcs/sources_1/new/MemDatos.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

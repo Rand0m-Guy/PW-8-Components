@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Note: All tests completed
+Note: Pruebas Completadas
 Time: 675 ns  Iteration: 1  Process: /MemDatos_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.srcs/sim_1/new/Testing.vhd
-INFO: xsimkernel Simulation Memory Usage: 294852 KB (Peak: 348284 KB), Simulation CPU Usage: 480 ms
+INFO: xsimkernel Simulation Memory Usage: 298952 KB (Peak: 348284 KB), Simulation CPU Usage: 480 ms

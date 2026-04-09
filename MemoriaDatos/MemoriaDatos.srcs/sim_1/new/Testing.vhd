@@ -1,28 +1,22 @@
 library IEEE;
-library WORK;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use WORK.RV8Integer.ALL;
 
 entity MemDatos_tb is
 end MemDatos_tb;
 
 architecture TB of MemDatos_tb is
-
-    -- DUT Signals
+    constant N : integer := 8;
+    
     signal CLK : STD_LOGIC := '0';
     signal WE  : STD_LOGIC := '0';
-    signal A   : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal WD  : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-    signal RD  : STD_LOGIC_VECTOR (7 downto 0);
+    signal A   : STD_LOGIC_VECTOR (N-1 downto 0) := (others => '0');
+    signal WD  : STD_LOGIC_VECTOR (N-1 downto 0) := (others => '0');
+    signal RD  : STD_LOGIC_VECTOR (N-1 downto 0);
 
     constant CLK_PERIOD : time := 10 ns;
 
 begin
-
-    ----------------------------------------------------------------
-    -- DUT INSTANTIATION
-    ----------------------------------------------------------------
     DUT: entity work.MemDatos
         port map (
             CLK => CLK,
@@ -32,9 +26,6 @@ begin
             RD  => RD
         );
 
-    ----------------------------------------------------------------
-    -- CLOCK GENERATION
-    ----------------------------------------------------------------
     clk_process : process
     begin
         while true loop
@@ -45,19 +36,10 @@ begin
         end loop;
     end process;
 
-    ----------------------------------------------------------------
-    -- STIMULUS
-    ----------------------------------------------------------------
     stim_proc: process
-
-        ----------------------------------------------------------------
-        -- LOCAL PROCEDURES (Vivado-safe)
-        ----------------------------------------------------------------
-
-        -- WRITE (synchronous)
         procedure WRITE_MEM(
-            constant addr : STD_LOGIC_VECTOR(7 downto 0);
-            constant data : STD_LOGIC_VECTOR(7 downto 0)
+            constant addr : STD_LOGIC_VECTOR(N-1 downto 0);
+            constant data : STD_LOGIC_VECTOR(N-1 downto 0)
         ) is
         begin
             A  <= addr;
@@ -67,10 +49,9 @@ begin
             WE <= '0';
         end procedure;
 
-        -- READ + CHECK (synchronous!)
         procedure READ_CHECK(
-            constant addr : STD_LOGIC_VECTOR(7 downto 0);
-            constant expected : STD_LOGIC_VECTOR(7 downto 0)
+            constant addr : STD_LOGIC_VECTOR(N-1 downto 0);
+            constant expected : STD_LOGIC_VECTOR(N-1 downto 0)
         ) is
         begin
             A  <= addr;
@@ -86,20 +67,16 @@ begin
         end procedure;
 
     begin
-
-        ----------------------------------------------------------------
-        -- INITIAL DELAY
-        ----------------------------------------------------------------
         wait for 20 ns;
 
         ----------------------------------------------------------------
-        -- TEST 1: Basic Write/Read
+        -- TEST 1: Escritura/Lectura
         ----------------------------------------------------------------
         WRITE_MEM(x"01", x"AA");
         READ_CHECK(x"01", x"AA");
 
         ----------------------------------------------------------------
-        -- TEST 2: Multiple Writes
+        -- TEST 2: Escrituras Múltiples
         ----------------------------------------------------------------
         WRITE_MEM(x"02", x"55");
         WRITE_MEM(x"03", x"FF");
@@ -108,13 +85,13 @@ begin
         READ_CHECK(x"03", x"FF");
 
         ----------------------------------------------------------------
-        -- TEST 3: Overwrite Same Address
+        -- TEST 3: Sobreescribir dirección de memoria
         ----------------------------------------------------------------
         WRITE_MEM(x"02", x"11");
         READ_CHECK(x"02", x"11");
 
         ----------------------------------------------------------------
-        -- TEST 4: Boundary Addresses
+        -- TEST 4: Casos Límite
         ----------------------------------------------------------------
         WRITE_MEM(x"00", x"99");
         WRITE_MEM(x"FF", x"77");
@@ -123,23 +100,19 @@ begin
         READ_CHECK(x"FF", x"77");
 
         ----------------------------------------------------------------
-        -- TEST 5: SEQUENTIAL ACCESS (important)
+        -- TEST 5: Acceso Secuencial
         ----------------------------------------------------------------
         for i in 0 to 15 loop
-            WRITE_MEM(std_logic_vector(to_unsigned(i,8)),
-                      std_logic_vector(to_unsigned(i*2,8)));
+            WRITE_MEM(std_logic_vector(to_unsigned(i,N)),
+                      std_logic_vector(to_unsigned(i*2,N)));
         end loop;
 
         for i in 0 to 15 loop
-            READ_CHECK(std_logic_vector(to_unsigned(i,8)),
-                       std_logic_vector(to_unsigned(i*2,8)));
+            READ_CHECK(std_logic_vector(to_unsigned(i,N)),
+                       std_logic_vector(to_unsigned(i*2,N)));
         end loop;
 
-        ----------------------------------------------------------------
-        -- DONE
-        ----------------------------------------------------------------
-        report "All tests completed" severity note;
-
+        report "Pruebas Completadas" severity note;
         wait;
     end process;
 

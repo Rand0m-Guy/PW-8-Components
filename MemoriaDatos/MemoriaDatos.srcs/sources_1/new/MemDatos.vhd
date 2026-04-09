@@ -1,28 +1,28 @@
 library IEEE;
-library WORK;
 use IEEE.STD_LOGIC_1164.ALL;
-use WORK.RV8Integer.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity MemDatos is
+    generic ( N : INTEGER := 8 );
     Port ( CLK, WE : in STD_LOGIC;
-           A : in STD_LOGIC_VECTOR (7 downto 0);
-           WD : in STD_LOGIC_VECTOR (7 downto 0);
-           RD : out STD_LOGIC_VECTOR (7 downto 0));
+           A : in STD_LOGIC_VECTOR (N-1 downto 0);
+           WD : in STD_LOGIC_VECTOR (N-1 downto 0);
+           RD : out STD_LOGIC_VECTOR (N-1 downto 0));
 end MemDatos;
 
 architecture Behavioral of MemDatos is
 
-type MATRIZ is array (0 TO urv8int'HIGH) OF STD_LOGIC_VECTOR(7 downto 0);
+type MATRIZ is array (0 TO 2**N - 1) OF STD_LOGIC_VECTOR(N-1 downto 0);
 signal MEMORIA: MATRIZ := (others => (others => '0')); -- Inicializamos memoria en 0s
 
 begin
     process(CLK)
     begin
-        if (CLK'event and CLK='1') then
-            if (WE='1') then -- Escritura, ignorando registro 0
-                MEMORIA(to_urv8int(A)) <= WD;
+        if (rising_edge(CLK)) then
+            if (WE='1') then
+                MEMORIA(to_integer(unsigned(A))) <= WD; -- Escritura
             else
-                RD <= MEMORIA(to_urv8int(A));
+                RD <= MEMORIA(to_integer(unsigned(A))); -- Lectura
             end if;
         end if; 
     end process;

@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1775177815" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/alu_pw8.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="alu_pw8_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="alu_pw8.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="alu_pw8_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="alu_pw8_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="alu_pw8_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="alu_pw8.vds"/>
   <File Type="REPORTS-TCL" Name="alu_pw8_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="alu_pw8_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="alu_pw8.tcl"/>
+  <File Type="RDS-UTIL" Name="alu_pw8_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="alu_pw8_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../../Desktop/alu_pw8.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_pw8.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Desktop/alu_pw8.vhd"/>
+        <Attr Name="ImportTime" Val="1775173625"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -52,9 +51,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

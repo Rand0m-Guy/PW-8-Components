@@ -1,35 +1,37 @@
 library IEEE;
-library WORK;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use WORK.RV8Integer.ALL;
+use IEEE.math_real."log2";
+use IEEE.math_real."floor";
 
 entity ArchReg is
+    generic ( N : INTEGER := 8 ); -- N DEBE SER POTENCIA DE 2
     Port ( CLK : in STD_LOGIC;
            WE3 : in STD_LOGIC;
-           A1,A2,A3 : in STD_LOGIC_VECTOR (2 downto 0);
-           WD3 : in STD_LOGIC_VECTOR (7 downto 0);
-           RD1,RD2 : out STD_LOGIC_VECTOR (7 downto 0));
+           -- Como sólo se usa al inicio de la declaración, sigue siendo sintetizable
+           A1,A2,A3 : in STD_LOGIC_VECTOR (integer(floor(log2(real(N - 1)))) downto 0); -- Número de bits para direccionar N registros
+           WD3 : in STD_LOGIC_VECTOR (N-1 downto 0);
+           RD1,RD2 : out STD_LOGIC_VECTOR (N-1 downto 0));
 end ArchReg;
 
 architecture Comportamiento of ArchReg is
 
-type MATRIZ is array (0 TO 7) OF STD_LOGIC_VECTOR(7 downto 0);
-signal REGISTROS: MATRIZ := ("00000000","00000000","00000000","00000000","00000000","00000000","00000000","00000000"); -- Inicializamos archivo de registros en cero
+type MATRIZ is array (0 TO N-1) OF STD_LOGIC_VECTOR(N-1 downto 0);
+signal REGISTROS: MATRIZ := (others => (others => '0')); -- Inicializamos archivo de registros en cero
 
 begin
 
     process(CLK)
     begin
-        if (CLK'event and CLK='1') then
-            if (WE3='1' and A3 /= "000") then -- Escritura, ignorando registro 0
-                REGISTROS(to_urv8int(A3)) <= WD3;
+        if rising_edge(CLK) then
+            if WE3='1' and unsigned(A3) /= 0 then -- Escritura, ignorando registro 0
+                REGISTROS(to_integer(unsigned(A3))) <= WD3;
             end if;
         end if; 
     end process;
     
-    -- Proceso de lectura. Realmente no afecta en caso de que se haya hecho escritura
-    RD1 <= REGISTROS(to_urv8int(A1));
-    RD2 <= REGISTROS(to_urv8int(A2));
+    -- Proceso de lectura asíncrono
+    RD1 <= REGISTROS(to_integer(unsigned(A1)));
+    RD2 <= REGISTROS(to_integer(unsigned(A2)));
 
 end Comportamiento;

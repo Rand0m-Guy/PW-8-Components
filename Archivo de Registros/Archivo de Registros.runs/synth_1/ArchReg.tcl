@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-2
@@ -72,10 +71,7 @@ set_property ip_output_repo {/home/randomguy/Documents/School/TT/Vivado/Archivo 
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {
-  {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sources_1/new/RV8Integer.vhd}
-  {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sources_1/new/ArchReg.vhd}
-}
+read_vhdl -library xil_defaultlib {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sources_1/new/ArchReg.vhd}}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -85,8 +81,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/randomguy/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc
-set_property used_in_implementation false [get_files /home/randomguy/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc]
+read_xdc {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}
+set_property used_in_implementation false [get_files {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 

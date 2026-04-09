@@ -1,6 +1,4 @@
 Time resolution is 1 ps
-Error: Mismatch at register 4
-Time: 48 ns  Iteration: 0  Process: /ArchReg_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sim_1/new/Testing.vhd
-Note: All tests finished
-Time: 57 ns  Iteration: 0  Process: /ArchReg_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sim_1/new/Testing.vhd
-INFO: xsimkernel Simulation Memory Usage: 294848 KB (Peak: 348280 KB), Simulation CPU Usage: 480 ms
+Note: All tests completed
+Time: 136 ns  Iteration: 0  Process: /ArchReg_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sim_1/new/Testing.vhd
+INFO: xsimkernel Simulation Memory Usage: 298948 KB (Peak: 348280 KB), Simulation CPU Usage: 480 ms

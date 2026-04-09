@@ -12,7 +12,7 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling package xil_defaultlib.rv8integer
+Compiling package ieee.math_real
 Compiling architecture comportamiento of entity xil_defaultlib.ArchReg [archreg_default]
 Compiling architecture tb of entity xil_defaultlib.archreg_tb
 Built simulation snapshot ArchReg_tb_behav

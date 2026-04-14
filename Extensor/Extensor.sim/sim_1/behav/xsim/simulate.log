@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: Simulacion completada.
+Time: 20 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+$finish called at time : 20 ns : File "C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd" Line 39

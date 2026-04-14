@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Mar 31 22:00:36 2026
-# Process ID         : 24142
+# Start of session at: Thu Apr  9 15:08:04 2026
+# Process ID         : 20009
 # Current directory  : /home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.runs/synth_1
 # Command line       : vivado -log ArchReg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ArchReg.tcl
 # Log file           : /home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.runs/synth_1/ArchReg.vds
@@ -13,12 +13,12 @@
 # Platform           : Pop
 # Operating System   : Pop!_OS 22.04 LTS
 # Processor Detail   : AMD Ryzen 5 9600X 6-Core Processor
-# CPU Frequency      : 5402.941 MHz
+# CPU Frequency      : 5380.680 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 32679 MB
 # Swap memory        : 21474 MB
 # Total Virtual      : 54153 MB
-# Available Virtual  : 46224 MB
+# Available Virtual  : 45571 MB
 #-----------------------------------------------------------
 source ArchReg.tcl -notrace

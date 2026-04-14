@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Tue Mar 31 22:01:29 2026
+| Date         : Thu Apr  9 15:15:17 2026
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_bus_skew -warn_on_violation -file ArchReg_bus_skew_routed.rpt -pb ArchReg_bus_skew_routed.pb -rpx ArchReg_bus_skew_routed.rpx
 | Design       : ArchReg

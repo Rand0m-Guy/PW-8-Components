@@ -97,7 +97,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -109,7 +108,7 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7vx485tffg1157-1
+  create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -122,13 +121,13 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Users/pande/Documents/PW8/Extensor/Extensor.runs/synth_1/Extensor.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/pande/Downloads/Constr_extender.xdc
+  read_xdc C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top Extensor -part xc7vx485tffg1157-1 
+  link_design -top Extensor -part xc7a100tcsg324-1 
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }

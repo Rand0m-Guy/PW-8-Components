@@ -1,11 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Tue Apr 14 00:23:33 2026
+| Date             : Tue Apr 14 18:40:42 2026
 | Host             : johnnylov01 running 64-bit major release  (build 9200)
 | Command          : report_power -file Extensor_power_routed.rpt -pb Extensor_power_summary_routed.pb -rpx Extensor_power_routed.rpx
 | Design           : Extensor
-| Device           : xc7vx485tffg1157-1
+| Device           : xc7a100tcsg324-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.251        |
+| Total On-Chip Power (W)  | 8.806        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.979        |
-| Device Static (W)        | 0.271        |
-| Effective TJA (C/W)      | 1.4          |
-| Max Ambient (C)          | 80.5         |
-| Junction Temperature (C) | 29.5         |
+| Dynamic (W)              | 8.637        |
+| Device Static (W)        | 0.168        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 44.8         |
+| Junction Temperature (C) | 65.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,11 +53,11 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Slice Logic    |     0.027 |        8 |       --- |             --- |
-|   LUT as Logic |     0.027 |        7 |    303600 |           <0.01 |
-| Signals        |     0.108 |       22 |       --- |             --- |
-| I/O            |     2.844 |       22 |       600 |            3.67 |
-| Static Power   |     0.271 |          |           |                 |
-| Total          |     3.251 |          |           |                 |
+|   LUT as Logic |     0.027 |        7 |     63400 |            0.01 |
+| Signals        |     0.129 |       22 |       --- |             --- |
+| I/O            |     8.481 |       22 |       210 |           10.48 |
+| Static Power   |     0.168 |          |           |                 |
+| Total          |     8.806 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,22 +67,18 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.353 |       0.192 |      0.161 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.263 |       0.225 |      0.038 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.284 |       0.212 |      0.072 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.334 |       0.309 |      0.025 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.389 |       2.385 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     1.325 |       1.324 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| MGTZVccl  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| MGTZAVcc  |       1.075 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| MGTZVcch  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -111,10 +107,10 @@ Table of Contents
 
 +-----------------------+--------------------------+
 | Ambient Temp (C)      | 25.0                     |
-| ThetaJA (C/W)         | 1.4                      |
+| ThetaJA (C/W)         | 4.6                      |
 | Airflow (LFM)         | 250                      |
 | Heat Sink             | medium (Medium Profile)  |
-| ThetaSA (C/W)         | 2.4                      |
+| ThetaSA (C/W)         | 4.6                      |
 | Board Selection       | medium (10"x10")         |
 | # of Board Layers     | 12to15 (12 to 15 Layers) |
 | Board Temperature (C) | 25.0                     |
@@ -138,7 +134,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| Extensor |     2.979 |
+| Extensor |     8.637 |
 +----------+-----------+
 
 

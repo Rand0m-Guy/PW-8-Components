@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1776147288" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PC_pw8.dcp">
-  <File Type="PA-TCL" Name="PC_pw8.tcl"/>
   <File Type="REPORTS-TCL" Name="PC_pw8_reports.tcl"/>
-  <File Type="RDS-RDS" Name="PC_pw8.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="PC_pw8_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="PC_pw8_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="PC_pw8_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="PC_pw8.tcl"/>
+  <File Type="RDS-RDS" Name="PC_pw8.vds"/>
   <File Type="RDS-DCP" Name="PC_pw8.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="PC_pw8_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="PC_pw8_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/PC_pw8.vhd">
@@ -25,8 +22,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../Downloads/Constr_pc.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Constr_pc.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/Constr_pc.xdc"/>
+        <Attr Name="ImportTime" Val="1776147278"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -50,9 +49,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

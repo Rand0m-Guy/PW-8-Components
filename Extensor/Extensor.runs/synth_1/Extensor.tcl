@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/pande/Documents/PW8/Extensor/Extensor.runs/synth_1/Extensor.tcl"
+  variable script "/home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.runs/synth_1/Extensor.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -63,15 +64,15 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/pande/Documents/PW8/Extensor/Extensor.cache/wt [current_project]
-set_property parent.project_path C:/Users/pande/Documents/PW8/Extensor/Extensor.xpr [current_project]
+set_property webtalk.parent_dir /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.cache/wt [current_project]
+set_property parent.project_path /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/pande/Documents/PW8/Extensor/Extensor.cache/ip [current_project]
+set_property ip_output_repo /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/sources_1/new/Extensor.vhd
+read_vhdl -library xil_defaultlib /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/sources_1/new/Extensor.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -81,12 +82,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/pande/Downloads/Constr_extender.xdc
-set_property used_in_implementation false [get_files C:/Users/pande/Downloads/Constr_extender.xdc]
+read_xdc /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc
+set_property used_in_implementation false [get_files /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/utils_1/imports/synth_1/Extensor.dcp
+read_checkpoint -auto_incremental -incremental /home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/utils_1/imports/synth_1/Extensor.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

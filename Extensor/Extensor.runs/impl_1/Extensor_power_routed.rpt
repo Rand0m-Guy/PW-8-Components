@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Tue Apr 14 18:40:42 2026
-| Host             : johnnylov01 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date             : Fri Apr 17 20:10:56 2026
+| Host             : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command          : report_power -file Extensor_power_routed.rpt -pb Extensor_power_summary_routed.pb -rpx Extensor_power_routed.rpx
 | Design           : Extensor
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 8.806        |
+| Total On-Chip Power (W)  | 8.855        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 8.637        |
-| Device Static (W)        | 0.168        |
+| Dynamic (W)              | 8.686        |
+| Device Static (W)        | 0.169        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 44.8         |
-| Junction Temperature (C) | 65.2         |
+| Max Ambient (C)          | 44.6         |
+| Junction Temperature (C) | 65.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.027 |        8 |       --- |             --- |
-|   LUT as Logic |     0.027 |        7 |     63400 |            0.01 |
-| Signals        |     0.129 |       22 |       --- |             --- |
-| I/O            |     8.481 |       22 |       210 |           10.48 |
-| Static Power   |     0.168 |          |           |                 |
-| Total          |     8.806 |          |           |                 |
+| Slice Logic    |     0.025 |        8 |       --- |             --- |
+|   LUT as Logic |     0.025 |        6 |     63400 |           <0.01 |
+| Signals        |     0.120 |       22 |       --- |             --- |
+| I/O            |     8.541 |       22 |       210 |           10.48 |
+| Static Power   |     0.169 |          |           |                 |
+| Total          |     8.855 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,9 +67,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.284 |       0.212 |      0.072 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.334 |       0.309 |      0.025 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.389 |       2.385 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.274 |       0.201 |      0.073 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.336 |       0.311 |      0.025 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.406 |       2.402 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -134,7 +134,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| Extensor |     8.637 |
+| Extensor |     8.686 |
 +----------+-----------+
 
 

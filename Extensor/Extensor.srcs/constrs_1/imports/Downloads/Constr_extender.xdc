@@ -272,7 +272,7 @@ set_property -dict { PACKAGE_PIN F18   IOSTANDARD LVCMOS33 } [get_ports { imm[11
 
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { immSrc[0] }]; #IO_L21N_T3_DQS_A18_15 Sch=ja[2]
 set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { immSrc[1] }]; #IO_L16P_T2_A28_15 Sch=ja[8]
-#set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { SWV[14] }]; #IO_L20N_T3_A19_15 Sch=ja[1]
+set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { immSrc[2] }]; #IO_L20N_T3_A19_15 Sch=ja[1]
 #set_property -dict { PACKAGE_PIN D17   IOSTANDARD LVCMOS33 } [get_ports { SWV[15] }]; #IO_L16N_T2_A27_15 Sch=ja[7]
 
 #set_property -dict { PACKAGE_PIN B18   IOSTANDARD LVCMOS33 } [get_ports { SWV[16] }]; #IO_L10P_T1_AD11P_15 Sch=xa_p[4]

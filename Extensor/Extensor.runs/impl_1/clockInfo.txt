@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2
-| Date         : Tue Apr 14 18:40:01 2026
-| Host         : johnnylov01
+| Date         : Fri Apr 17 20:10:44 2026
+| Host         : pop-os
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--
 -------------------------------------

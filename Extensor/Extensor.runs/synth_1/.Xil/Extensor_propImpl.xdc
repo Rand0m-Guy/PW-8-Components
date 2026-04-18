@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/pande/Downloads/Constr_extender.xdc rfile:../../../../../../Downloads/Constr_extender.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc rfile:../../../Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { immExt[0] }]; #IO_L18P_T2_A24_15 Sch=led[0]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
@@ -43,3 +43,5 @@ set_property src_info {type:XDC file:1 line:273 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { immSrc[0] }]; #IO_L21N_T3_DQS_A18_15 Sch=ja[2]
 set_property src_info {type:XDC file:1 line:274 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { immSrc[1] }]; #IO_L16P_T2_A28_15 Sch=ja[8]
+set_property src_info {type:XDC file:1 line:275 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { immSrc[2] }]; #IO_L20N_T3_A19_15 Sch=ja[1]

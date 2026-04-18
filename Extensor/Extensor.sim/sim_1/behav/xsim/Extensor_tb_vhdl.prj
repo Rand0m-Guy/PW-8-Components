@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Extensor.srcs/sources_1/new/Extensor.vhd" \
+"../../../../Extensor.srcs/sim_1/new/Extensor_tb.vhd" \
+
+# Do not sort compile order
+nosort

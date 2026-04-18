@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PC_pw8.srcs/sources_1/new/PC_pw8.vhd" \
+"../../../../PC_pw8.srcs/sim_1/new/PC_pw8_tb.vhd" \
+
+# Do not sort compile order
+nosort

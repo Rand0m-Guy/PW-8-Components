@@ -1,0 +1,41 @@
+----------------------------------------------------------------------------------------------------
+-- @module: PC_PW8
+-- @authors: Macias Huerta Pablo Isaac, Pérez Bárcenas Juan Rubén
+-- @description: Contador de Programa
+-- @parameters:
+            -- N (generic constant): Tamaño de señal de salida
+            -- PCNext (in): Siguiente valor de memoria
+            -- LD (in): Señal que indica cuándo guardar
+            -- CLR (in): Hace reset
+            -- CLK (in): Señal de reloj
+            -- PC_out (out): Valor de salida
+----------------------------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity PC_pw8 is
+generic(N:integer:=8);
+    Port ( PCNext : in STD_LOGIC_VECTOR (N-1 downto 0);
+           LD : in STD_LOGIC;
+           CLR : in STD_LOGIC;
+           CLK : in STD_LOGIC;
+           PC_out : out STD_LOGIC_VECTOR (N-1 downto 0));
+end PC_pw8;
+
+architecture Behavioral of PC_pw8 is
+    signal pc_reg : std_logic_vector(N-1 downto 0) := (others => '0');
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if clr = '1' then
+                pc_reg<=(others => '0');
+            elsif ld = '1' then
+                pc_reg <= PCNext;
+            end if;
+        end if;
+    end process;
+    PC_out <= pc_reg;
+
+end Behavioral;

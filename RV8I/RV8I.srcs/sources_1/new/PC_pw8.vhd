@@ -24,18 +24,18 @@ generic(N:integer:=8);
 end PC_pw8;
 
 architecture Behavioral of PC_pw8 is
-    signal pc_reg : std_logic_vector(N-1 downto 0) := (others => '0');
+    -- signal pc_reg : std_logic_vector(N-1 downto 0) := (others => '0');
 begin
     process(clk)
     begin
         if rising_edge(clk) then
             if clr = '1' then
-                pc_reg<=(others => '0');
+                PC_out<=(others => '0');
             elsif ld = '1' then
-                pc_reg <= PCNext;
+                PC_out <= PCNext;
             end if;
         end if;
     end process;
-    PC_out <= pc_reg;
+    -- PC_out <= pc_reg;
 
 end Behavioral;

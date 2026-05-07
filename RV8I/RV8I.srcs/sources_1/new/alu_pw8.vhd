@@ -20,7 +20,7 @@ entity alu_pw8 is
            B : in STD_LOGIC_VECTOR (N-1 downto 0);
            ALU_ctrl : in STD_LOGIC_VECTOR (2 downto 0);
            zero : out STD_LOGIC;
-           ALURes : out STD_LOGIC_VECTOR (N-1 downto 0));
+           ALURes : inout STD_LOGIC_VECTOR (N-1 downto 0));
 end alu_pw8;
 
 architecture alu of alu_pw8 is
@@ -29,21 +29,21 @@ begin
     process(A, B, ALU_ctrl)
     begin
         case ALU_ctrl is
-            when "000" => res <= std_logic_vector(signed(A) + signed(B));
-            when "001" => res <= std_logic_vector(signed(A) - signed(B));
-            when "010" => res <= A XOR B;
-            when "011" => res <= A AND B;
+            when "000" => AluRES <= std_logic_vector(signed(A) + signed(B));
+            when "001" => AluRES <= std_logic_vector(signed(A) - signed(B));
+            when "010" => AluRES <= A XOR B;
+            when "011" => AluRES <= A AND B;
             when "100" => 
                 if signed(A) < signed(B) then
-                    res <= std_logic_vector(TO_UNSIGNED(1, N));
+                    AluRES <= std_logic_vector(TO_UNSIGNED(1, N));
                 else 
-                    res <= (others => '0');
+                    AluRES <= (others => '0');
                 end if;
-            when "101" => res <= std_logic_vector(shift_left(unsigned(A), TO_INTEGER(unsigned(B))));
-            when "110" => res <= std_logic_vector(shift_right(unsigned(A), TO_INTEGER(unsigned(B))));
-            when others => res <= (others => '0');
+            when "101" => AluRES <= std_logic_vector(shift_left(unsigned(A), TO_INTEGER(unsigned(B))));
+            when "110" => AluRES <= std_logic_vector(shift_right(unsigned(A), TO_INTEGER(unsigned(B))));
+            when others => AluRES <= (others => '0');
        end case;
     end process;
-    AluRES <= res;
-    Zero   <= '1' when res = std_logic_vector(to_unsigned(0, N)) else '0';
+    -- AluRES <= res;
+    Zero   <= '1' when AluRES = std_logic_vector(to_unsigned(0, N)) else '0';
 end alu;

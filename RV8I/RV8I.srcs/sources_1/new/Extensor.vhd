@@ -22,7 +22,7 @@ entity Extensor is
 end Extensor;
 
 architecture Extender of Extensor is
-    signal vec_imm : std_logic_vector(N-1 downto 0);
+    -- signal vec_imm : std_logic_vector(N-1 downto 0);
 begin
 
     process(imm, immSrc)
@@ -30,25 +30,25 @@ begin
         case immSrc(1 downto 0) is
             when "00" =>
                 if immSrc(2) = '1' then -- Extensión signada
-                    vec_imm <= (N-1 downto 5 => imm(imm_slice-1)) & imm(imm_slice-1 downto imm_slice-5);
+                    immExt <= (N-1 downto 5 => imm(imm_slice-1)) & imm(imm_slice-1 downto imm_slice-5);
                 else -- Extensión sin signo
-                    vec_imm <= (N-1 downto 5 => '0') & imm(imm_slice-1 downto imm_slice-5);
+                    immExt <= (N-1 downto 5 => '0') & imm(imm_slice-1 downto imm_slice-5);
                 end if;
             when "01" =>
                 if immSrc(2) = '1' then -- Extensión signada
-                    vec_imm <= (N-1 downto 5 => imm(imm_slice-1)) & imm(imm_slice-1 downto 10) & imm(2 downto 0);
+                    immExt <= (N-1 downto 5 => imm(imm_slice-1)) & imm(imm_slice-1 downto 10) & imm(2 downto 0);
                 else
-                    vec_imm <= (N-1 downto 5 => '0') & imm(imm_slice-1 downto 10) & imm(2 downto 0);
+                    immExt <= (N-1 downto 5 => '0') & imm(imm_slice-1 downto 10) & imm(2 downto 0);
                 end if;
             when "10" => -- Como los 8 bits están completos, no hay extensión
-                vec_imm <= imm(imm_slice-1 downto 7) & imm(2 downto 0);
+                immExt <= imm(imm_slice-1 downto 7) & imm(2 downto 0);
             when "11" => -- Como los 8 bits están completos, no hay extensión
-                vec_imm <= imm(imm_slice-1 downto 4);
+                immExt <= imm(imm_slice-1 downto 4);
             when others =>
-                vec_imm <= (others => '0');
+                immExt <= (others => '0');
         end case;
     end process;
 
-    immExt <= vec_imm;
+    -- immExt <= vec_imm;
 
 end Extender;

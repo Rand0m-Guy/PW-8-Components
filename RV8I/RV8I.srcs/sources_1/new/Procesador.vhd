@@ -24,7 +24,8 @@ entity Procesador is
     Port ( CLK, CLR : in STD_LOGIC;
            A, WD : inout STD_LOGIC_VECTOR (N-1 downto 0);
            PC_OUT_TEST : out STD_LOGIC_VECTOR (N-1 downto 0);
-           MICRO_INSTR_TEST: out STD_LOGIC_VECTOR (14 downto 0)
+           MICRO_INSTR_TEST: out STD_LOGIC_VECTOR (14 downto 0);
+           INSTR_TEST : out STD_LOGIC_VECTOR (15 downto 0)
            );
 end Procesador;
 
@@ -69,6 +70,7 @@ begin
     -- TEST
     PC_OUT_TEST <= PC_Out;
     MICRO_INSTR_TEST <= RegWrite & WriteSel & PCCLR & PCLD & PCSrc & ResultSrc & MemWrite & ALUCtrl & ALUSrc & ImmSrc;
+    INSTR_TEST <= Instr;
     
     A <= ImmExt;
     WD <= DataMem_Out;

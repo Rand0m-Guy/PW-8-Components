@@ -18,6 +18,7 @@ architecture TB of Procesador_tb is
     
     signal TEST_PC : STD_LOGIC_VECTOR (7 downto 0);
     signal MICRO_TEST : STD_LOGIC_VECTOR (14 downto 0);
+    signal INSTR_TEST : STD_LOGIC_VECTOR (15 downto 0);
 
     constant CLK_PERIOD : time := 10 ns;
 
@@ -33,7 +34,8 @@ begin
             A   => A,
             WD  => WD,
             PC_OUT_TEST => TEST_PC,
-            MICRO_INSTR_TEST => MICRO_TEST
+            MICRO_INSTR_TEST => MICRO_TEST,
+            INSTR_TEST => INSTR_TEST
         );
 
     ----------------------------------------------------------------
@@ -77,7 +79,7 @@ begin
         ------------------------------------------------------------
         -- RUN AGAIN
         ------------------------------------------------------------
-        wait for 1000 ns;
+        wait for 10000 ns;
 
         report "Simulation finished successfully" severity note;
 
@@ -94,7 +96,8 @@ begin
                    " | A=" & integer'image(to_integer(unsigned(A))) &
                    " | WD=" & integer'image(to_integer(unsigned(WD))) &
                    " | PC=" & integer'image(to_integer(unsigned(TEST_PC))) &
-                   " | MicroInstr=" & integer'image(to_integer(unsigned(MICRO_TEST)));
+                   " | MicroInstr=" & integer'image(to_integer(unsigned(MICRO_TEST))) &
+                   " | Instr=" & integer'image(to_integer(unsigned(INSTR_TEST)));
         end if;
     end process;
 

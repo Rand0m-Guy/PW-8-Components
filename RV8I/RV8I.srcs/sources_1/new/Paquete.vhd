@@ -82,7 +82,7 @@ package Paquete is
                B : in STD_LOGIC_VECTOR (N-1 downto 0);
                ALU_ctrl : in STD_LOGIC_VECTOR (2 downto 0);
                zero : out STD_LOGIC;
-               ALURes : out STD_LOGIC_VECTOR (N-1 downto 0));
+               ALURes : inout STD_LOGIC_VECTOR (N-1 downto 0));
     end component;
     
     -- Divisor de Frecuencia

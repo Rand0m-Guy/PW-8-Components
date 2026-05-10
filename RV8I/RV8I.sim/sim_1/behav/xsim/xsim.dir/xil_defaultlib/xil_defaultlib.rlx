@@ -2,13 +2,13 @@
 2020.2
 Nov 14 2025
 12:36:23
-/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd,1778382700,vhdl,,,,procesador_tb,,,,,,,,
-/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd,1778371108,vhdl,,,,archreg,,,,,,,,
-/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd,1778380669,vhdl,,,,control,,,,,,,,
+/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd,1778385559,vhdl,,,,procesador_tb,,,,,,,,
+/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd,1778384039,vhdl,,,,archreg,,,,,,,,
+/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd,1778387185,vhdl,,,,control,,,,,,,,
 /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd,1778118906,vhdl,,,,extensor,,,,,,,,
 /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd,1777847833,vhdl,,,,memdatos,,,,,,,,
-/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd,1778306690,vhdl,,,,meminstruc,,,,,,,,
+/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd,1778385403,vhdl,,,,meminstruc,,,,,,,,
 /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd,1778118952,vhdl,,,,pc_pw8,,,,,,,,
 /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Paquete.vhd,1778120116,vhdl,/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd,,,paquete,,,,,,,,
-/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd,1778382658,vhdl,/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd,,,procesador,,,,,,,,
+/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd,1778385493,vhdl,/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd,,,procesador,,,,,,,,
 /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd,1778380167,vhdl,,,,alu_pw8,,,,,,,,

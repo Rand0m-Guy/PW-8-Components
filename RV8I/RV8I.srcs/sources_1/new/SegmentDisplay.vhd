@@ -16,7 +16,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity SegmentDisplay is
     Port ( VAL1, VAL2 : in STD_LOGIC_VECTOR (7 downto 0);
            S11, S12, S13, S21, S22, S23 : out STD_LOGIC_VECTOR (7 downto 0);
-           SIGN1, SIGN2 : out STD LOGIC
+           SIGN1, SIGN2 : out STD_LOGIC
            );
 end SegmentDisplay;
 

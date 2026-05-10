@@ -1,8 +1,6 @@
 set_property SRC_FILE_INFO {cfile:/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc rfile:../../../RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { OSC_CLK }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
-set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
-create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {OSC_CLK}];
 set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { A[0] }]; #IO_L18P_T2_A24_15 Sch=led[0]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]

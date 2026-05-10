@@ -40,7 +40,9 @@ begin
     process(CLK)
     begin
         if rising_edge(CLK) then
+            report "===== ENTRADA DE RELOJ A ARCHREG =====";
             if WE3='1' and unsigned(A3) /= 0 then -- Escritura, ignorando registro 0
+                report "===== ESCRITURA A ARCHREG: A3:" & integer'image(to_integer(unsigned(A3))) & " | WD3: " & integer'image(to_integer(unsigned(WD3))) &  "=====";
                 REGISTROS(to_integer(unsigned(A3))) <= WD3;
             end if;
         end if; 

@@ -48,7 +48,7 @@ architecture Behavioral of Control is
 
 type MATRIZ_OP is array (0 TO NON_R_INSTR - 1) OF STD_LOGIC_VECTOR(SIGNAL_SIZE-1 downto 0);
 constant MICROCODE_OP : MATRIZ_OP := (
-    1 => "100100000000111", -- LI
+    1 => "100100001111111", -- LI
     2 => "000100010000110", -- ST
     3 => "100100000001100", -- ADDI
     4 => "100100000101100", -- XORI
@@ -60,7 +60,7 @@ constant MICROCODE_OP : MATRIZ_OP := (
     19 => "100100000011100", -- SUBI
     20 => "100100000111100", -- ANDI
     21 => "100100001101000", -- SRLI
-    22 => "110110000001011", -- JAL
+    22 => "110110001111011", -- JAL
     others => (others => '0')
 );
 
@@ -76,39 +76,28 @@ constant MICROCODE_FUNCT : MATRIZ_FUNCT := (
     others => (others => '0')
 );
 
-signal microcode : std_logic_vector(SIGNAL_SIZE-1 downto 0);
-signal pcsrc_signal : std_logic_vector(1 downto 0);
-
 begin
-    process(CLK)
-        variable codeToWrite : integer;
-    begin
-        if (rising_edge(CLK)) then
-            if opcode = "0000" then
-                codeToWrite  := to_integer(unsigned(Funct2 & Funct1));
-                microcode    <= MICROCODE_FUNCT(codeToWrite);
-                pcsrc_signal <= MICROCODE_FUNCT(codeToWrite)(SIGNAL_SIZE - 5 downto SIGNAL_SIZE - 6);
-            else
-                codeToWrite  := to_integer(unsigned(Funct1 & Opcode));
-                microcode    <= MICROCODE_OP(codeToWrite);
-                pcsrc_signal <= MICROCODE_OP(codeToWrite)(SIGNAL_SIZE - 5 downto SIGNAL_SIZE - 6);
-            end if; 
-        end if; 
-        
-        if (falling_edge(CLK) and (Funct1 & Opcode) = "00110" and Zero = '1') then
-            pcsrc_signal <= "01";
-        end if;
-    end process;
     
-    RegWrite    <= microcode(SIGNAL_SIZE - 1);
-    WriteSel    <= microcode(SIGNAL_SIZE - 2);
-    PCCLR       <= microcode(SIGNAL_SIZE - 3);
-    PCLD        <= microcode(SIGNAL_SIZE - 4);
-    PCSRC       <= pcsrc_signal;
-    ResultSrc   <= microcode(SIGNAL_SIZE - 7);
-    MemWrite    <= microcode(SIGNAL_SIZE - 8);
-    ALUCtrl     <= microcode(SIGNAL_SIZE - 9 downto SIGNAL_SIZE - 11);
-    ALUSrc      <= microcode(SIGNAL_SIZE - 12);
-    ImmSrc      <= microcode(SIGNAL_SIZE - 13 downto SIGNAL_SIZE - 15);
+    RegWrite    <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 1) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 1);
+    WriteSel    <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 2) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 2);
+    PCCLR       <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 3) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 3);
+    PCLD        <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 4) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 4);
+    PCSRC       <= "01" when ((Funct1 & Opcode) = "00110" and Zero = '1') else
+                   MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 5 downto SIGNAL_SIZE - 6) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 5 downto SIGNAL_SIZE - 6);
+    ResultSrc   <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 7) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 7);
+    MemWrite    <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 8) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 8);
+    ALUCtrl     <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 9 downto SIGNAL_SIZE - 11) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 9 downto SIGNAL_SIZE - 11);
+    ALUSrc      <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 12) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 12);
+    ImmSrc      <= MICROCODE_FUNCT(to_integer(unsigned(Funct2 & Funct1)))(SIGNAL_SIZE - 13 downto SIGNAL_SIZE - 15) when opcode = "0000" else
+                   MICROCODE_OP(to_integer(unsigned(Funct1 & Opcode)))(SIGNAL_SIZE - 13 downto SIGNAL_SIZE - 15);
     
 end Behavioral;

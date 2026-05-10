@@ -41,6 +41,7 @@ begin
                 end if;
             when "101" => AluRES <= std_logic_vector(shift_left(unsigned(A), TO_INTEGER(unsigned(B))));
             when "110" => AluRES <= std_logic_vector(shift_right(unsigned(A), TO_INTEGER(unsigned(B))));
+            when "111" => AluRES <= B;
             when others => AluRES <= (others => '0');
        end case;
     end process;

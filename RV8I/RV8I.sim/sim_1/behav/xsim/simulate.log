@@ -31,416 +31,484 @@ Note: t=45000 ps | A=1 | WD=0 | PC=1 | MicroInstr=18559 | Instr=289
 Time: 45 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 55 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 2=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
 Time: 55 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=55000 ps | A=2 | WD=1 | PC=2 | MicroInstr=18559 | Instr=561
+Note: t=55000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 55 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 65 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:4 | WD3: 12=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
 Time: 65 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=65000 ps | A=12 | WD=0 | PC=3 | MicroInstr=18559 | Instr=3137
+Note: t=65000 ps | A=1 | WD=0 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 65 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 75 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 1=====
-Time: 75 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=75000 ps | A=2 | WD=0 | PC=4 | MicroInstr=18432 | Instr=4368
+Note: t=75000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 75 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 85 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=85000 ps | A=72 | WD=1 | PC=5 | MicroInstr=2182 | Instr=18690
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 85 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=85000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 85 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 95 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:2 | WD3: 2=====
-Time: 95 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=95000 ps | A=2 | WD=1 | PC=6 | MicroInstr=18432 | Instr=4384
+Note: t=95000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 95 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 105 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=105000 ps | A=72 | WD=2 | PC=7 | MicroInstr=2182 | Instr=18946
+Note: t=105000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 105 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 115 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 4=====
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 1=====
 Time: 115 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=115000 ps | A=2 | WD=2 | PC=8 | MicroInstr=18444 | Instr=4915
+Note: t=115000 ps | A=2 | WD=0 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 115 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 125 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=125000 ps | A=2 | WD=4 | PC=9 | MicroInstr=2085 | Instr=8998
+Note: t=125000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 125 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 135 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=135000 ps | A=4 | WD=12 | PC=10 | MicroInstr=27771 | Instr=1158
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 135 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=135000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 135 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 145 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 3=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
 Time: 145 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=145000 ps | A=2 | WD=1 | PC=4 | MicroInstr=18432 | Instr=4368
+Note: t=145000 ps | A=1 | WD=1 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 145 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 155 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=155000 ps | A=72 | WD=3 | PC=5 | MicroInstr=2182 | Instr=18690
+Note: t=155000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 155 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 165 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:2 | WD3: 5=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
 Time: 165 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=165000 ps | A=2 | WD=3 | PC=6 | MicroInstr=18432 | Instr=4384
+Note: t=165000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 165 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 175 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=175000 ps | A=72 | WD=5 | PC=7 | MicroInstr=2182 | Instr=18946
+Note: t=175000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 175 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 185 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 6=====
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 2=====
 Time: 185 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=185000 ps | A=2 | WD=4 | PC=8 | MicroInstr=18444 | Instr=4915
+Note: t=185000 ps | A=2 | WD=1 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 185 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 195 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=195000 ps | A=2 | WD=6 | PC=9 | MicroInstr=2085 | Instr=8998
+Note: t=195000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 195 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 205 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=205000 ps | A=4 | WD=12 | PC=10 | MicroInstr=27771 | Instr=1158
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 205 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=205000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 205 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 215 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 8=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
 Time: 215 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=215000 ps | A=2 | WD=3 | PC=4 | MicroInstr=18432 | Instr=4368
+Note: t=215000 ps | A=1 | WD=2 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 215 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 225 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=225000 ps | A=72 | WD=8 | PC=5 | MicroInstr=2182 | Instr=18690
+Note: t=225000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 225 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 235 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:2 | WD3: 13=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
 Time: 235 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=235000 ps | A=2 | WD=8 | PC=6 | MicroInstr=18432 | Instr=4384
+Note: t=235000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 235 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 245 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=245000 ps | A=72 | WD=13 | PC=7 | MicroInstr=2182 | Instr=18946
+Note: t=245000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 245 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 255 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 8=====
-Time: 255 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=255000 ps | A=2 | WD=6 | PC=8 | MicroInstr=18444 | Instr=4915
+Note: t=255000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 255 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 265 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=265000 ps | A=2 | WD=8 | PC=9 | MicroInstr=2085 | Instr=8998
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 3=====
+Time: 265 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=265000 ps | A=2 | WD=2 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 265 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 275 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=275000 ps | A=4 | WD=12 | PC=10 | MicroInstr=27771 | Instr=1158
+Note: t=275000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 275 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 285 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 21=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
 Time: 285 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=285000 ps | A=2 | WD=8 | PC=4 | MicroInstr=18432 | Instr=4368
+Note: t=285000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 285 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 295 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=295000 ps | A=72 | WD=21 | PC=5 | MicroInstr=2182 | Instr=18690
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
+Time: 295 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=295000 ps | A=1 | WD=3 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 295 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 305 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:2 | WD3: 34=====
-Time: 305 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=305000 ps | A=2 | WD=21 | PC=6 | MicroInstr=18432 | Instr=4384
+Note: t=305000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 305 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 315 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=315000 ps | A=72 | WD=34 | PC=7 | MicroInstr=2182 | Instr=18946
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
+Time: 315 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=315000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 315 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 325 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 10=====
-Time: 325 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=325000 ps | A=2 | WD=8 | PC=8 | MicroInstr=18444 | Instr=4915
+Note: t=325000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 325 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 335 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=335000 ps | A=2 | WD=10 | PC=9 | MicroInstr=2085 | Instr=8998
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 4=====
+Time: 335 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=335000 ps | A=2 | WD=3 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 335 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 345 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=345000 ps | A=4 | WD=12 | PC=10 | MicroInstr=27771 | Instr=1158
+Note: t=345000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 345 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 355 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 55=====
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
 Time: 355 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=355000 ps | A=2 | WD=21 | PC=4 | MicroInstr=18432 | Instr=4368
+Note: t=355000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 355 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 365 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=365000 ps | A=72 | WD=55 | PC=5 | MicroInstr=2182 | Instr=18690
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 365 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=365000 ps | A=1 | WD=4 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 365 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 375 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:2 | WD3: 89=====
-Time: 375 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=375000 ps | A=2 | WD=55 | PC=6 | MicroInstr=18432 | Instr=4384
+Note: t=375000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 375 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 385 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=385000 ps | A=72 | WD=89 | PC=7 | MicroInstr=2182 | Instr=18946
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 385 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=385000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 385 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 395 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 12=====
-Time: 395 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=395000 ps | A=2 | WD=10 | PC=8 | MicroInstr=18444 | Instr=4915
+Note: t=395000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 395 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 405 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=405000 ps | A=2 | WD=12 | PC=9 | MicroInstr=2597 | Instr=8998
+Note: t=405000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 405 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 415 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=415000 ps | A=0 | WD=0 | PC=11 | MicroInstr=18444 | Instr=3
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 5=====
+Time: 415 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=415000 ps | A=2 | WD=4 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 415 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 425 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=425000 ps | A=0 | WD=0 | PC=12 | MicroInstr=18432 | Instr=0
+Note: t=425000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 425 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 435 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=435000 ps | A=0 | WD=0 | PC=13 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 435 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=435000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 435 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 445 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=445000 ps | A=0 | WD=0 | PC=14 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
+Time: 445 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=445000 ps | A=1 | WD=5 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 445 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 455 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=455000 ps | A=0 | WD=0 | PC=15 | MicroInstr=18432 | Instr=0
+Note: t=455000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 455 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 465 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=465000 ps | A=0 | WD=0 | PC=16 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
+Time: 465 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=465000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 465 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 475 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=475000 ps | A=0 | WD=0 | PC=17 | MicroInstr=18432 | Instr=0
+Note: t=475000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 475 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 485 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=485000 ps | A=0 | WD=0 | PC=18 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 6=====
+Time: 485 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=485000 ps | A=2 | WD=5 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 485 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 495 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=495000 ps | A=0 | WD=0 | PC=19 | MicroInstr=18432 | Instr=0
+Note: t=495000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 495 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 505 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=505000 ps | A=0 | WD=0 | PC=20 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 505 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=505000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 505 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 515 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=515000 ps | A=0 | WD=0 | PC=21 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 515 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=515000 ps | A=1 | WD=6 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 515 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 525 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=525000 ps | A=0 | WD=0 | PC=22 | MicroInstr=18432 | Instr=0
+Note: t=525000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 525 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 535 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=535000 ps | A=0 | WD=0 | PC=23 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 535 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=535000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 535 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 545 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=545000 ps | A=0 | WD=0 | PC=24 | MicroInstr=18432 | Instr=0
+Note: t=545000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 545 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 555 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=555000 ps | A=0 | WD=0 | PC=25 | MicroInstr=18432 | Instr=0
+Note: t=555000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 555 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 565 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=565000 ps | A=0 | WD=0 | PC=26 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 7=====
+Time: 565 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=565000 ps | A=2 | WD=6 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 565 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 575 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=575000 ps | A=0 | WD=0 | PC=27 | MicroInstr=18432 | Instr=0
+Note: t=575000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 575 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 585 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=585000 ps | A=0 | WD=0 | PC=28 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 585 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=585000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 585 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 595 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=595000 ps | A=0 | WD=0 | PC=29 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
+Time: 595 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=595000 ps | A=1 | WD=7 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 595 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 605 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=605000 ps | A=0 | WD=0 | PC=30 | MicroInstr=18432 | Instr=0
+Note: t=605000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 605 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 615 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=615000 ps | A=0 | WD=0 | PC=31 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
+Time: 615 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=615000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 615 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 625 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=625000 ps | A=0 | WD=0 | PC=32 | MicroInstr=18432 | Instr=0
+Note: t=625000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 625 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 635 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=635000 ps | A=0 | WD=0 | PC=33 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 8=====
+Time: 635 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=635000 ps | A=2 | WD=7 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 635 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 645 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=645000 ps | A=0 | WD=0 | PC=34 | MicroInstr=18432 | Instr=0
+Note: t=645000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 645 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 655 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=655000 ps | A=0 | WD=0 | PC=35 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 655 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=655000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 655 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 665 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=665000 ps | A=0 | WD=0 | PC=36 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 665 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=665000 ps | A=1 | WD=8 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 665 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 675 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=675000 ps | A=0 | WD=0 | PC=37 | MicroInstr=18432 | Instr=0
+Note: t=675000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 675 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 685 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=685000 ps | A=0 | WD=0 | PC=38 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 685 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=685000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 685 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 695 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=695000 ps | A=0 | WD=0 | PC=39 | MicroInstr=18432 | Instr=0
+Note: t=695000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 695 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 705 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=705000 ps | A=0 | WD=0 | PC=40 | MicroInstr=18432 | Instr=0
+Note: t=705000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 705 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 715 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=715000 ps | A=0 | WD=0 | PC=41 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 9=====
+Time: 715 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=715000 ps | A=2 | WD=8 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 715 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 725 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=725000 ps | A=0 | WD=0 | PC=42 | MicroInstr=18432 | Instr=0
+Note: t=725000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 725 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 735 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=735000 ps | A=0 | WD=0 | PC=43 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 735 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=735000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 735 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 745 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=745000 ps | A=0 | WD=0 | PC=44 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
+Time: 745 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=745000 ps | A=1 | WD=9 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 745 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 755 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=755000 ps | A=0 | WD=0 | PC=45 | MicroInstr=18432 | Instr=0
+Note: t=755000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 755 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 765 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=765000 ps | A=0 | WD=0 | PC=46 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
+Time: 765 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=765000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 765 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 775 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=775000 ps | A=0 | WD=0 | PC=47 | MicroInstr=18432 | Instr=0
+Note: t=775000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 775 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 785 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=785000 ps | A=0 | WD=0 | PC=48 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 10=====
+Time: 785 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=785000 ps | A=2 | WD=9 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 785 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 795 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=795000 ps | A=0 | WD=0 | PC=49 | MicroInstr=18432 | Instr=0
+Note: t=795000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 795 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 805 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=805000 ps | A=0 | WD=0 | PC=50 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 805 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=805000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 805 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 815 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=815000 ps | A=0 | WD=0 | PC=51 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 815 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=815000 ps | A=1 | WD=10 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 815 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 825 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=825000 ps | A=0 | WD=0 | PC=52 | MicroInstr=18432 | Instr=0
+Note: t=825000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 825 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 835 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=835000 ps | A=0 | WD=0 | PC=53 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 835 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=835000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 835 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 845 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=845000 ps | A=0 | WD=0 | PC=54 | MicroInstr=18432 | Instr=0
+Note: t=845000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 845 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 855 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=855000 ps | A=0 | WD=0 | PC=55 | MicroInstr=18432 | Instr=0
+Note: t=855000 ps | A=10 | WD=1 | PC=7 | MicroInstr=27771 | Instr=2694
 Time: 855 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 865 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=865000 ps | A=0 | WD=0 | PC=56 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 11=====
+Time: 865 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=865000 ps | A=2 | WD=10 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 865 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 875 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=875000 ps | A=0 | WD=0 | PC=57 | MicroInstr=18432 | Instr=0
+Note: t=875000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 875 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 885 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=885000 ps | A=0 | WD=0 | PC=58 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 885 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=885000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 885 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 895 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=895000 ps | A=0 | WD=0 | PC=59 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 1=====
+Time: 895 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=895000 ps | A=1 | WD=11 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 895 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 905 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=905000 ps | A=0 | WD=0 | PC=60 | MicroInstr=18432 | Instr=0
+Note: t=905000 ps | A=4 | WD=1 | PC=4 | MicroInstr=2597 | Instr=4934
 Time: 905 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 915 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=915000 ps | A=0 | WD=0 | PC=61 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 15=====
+Time: 915 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=915000 ps | A=15 | WD=0 | PC=8 | MicroInstr=18559 | Instr=3889
 Time: 915 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 925 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=925000 ps | A=0 | WD=0 | PC=62 | MicroInstr=18432 | Instr=0
+Note: t=925000 ps | A=10 | WD=15 | PC=9 | MicroInstr=2182 | Instr=2850
 Time: 925 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 935 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=935000 ps | A=0 | WD=0 | PC=63 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:1 | WD3: 12=====
+Time: 935 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=935000 ps | A=2 | WD=11 | PC=10 | MicroInstr=18432 | Instr=4368
 Time: 935 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 945 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=945000 ps | A=0 | WD=0 | PC=64 | MicroInstr=18432 | Instr=0
+Note: t=945000 ps | A=2 | WD=1 | PC=11 | MicroInstr=27771 | Instr=646
 Time: 945 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 955 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=955000 ps | A=0 | WD=0 | PC=65 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 955 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=955000 ps | A=0 | WD=0 | PC=2 | MicroInstr=18559 | Instr=49
 Time: 955 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 965 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=965000 ps | A=0 | WD=0 | PC=66 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 0=====
+Time: 965 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=965000 ps | A=1 | WD=12 | PC=3 | MicroInstr=18492 | Instr=2484
 Time: 965 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 975 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=975000 ps | A=0 | WD=0 | PC=67 | MicroInstr=18432 | Instr=0
+Note: t=975000 ps | A=4 | WD=0 | PC=4 | MicroInstr=2085 | Instr=4934
 Time: 975 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 985 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=985000 ps | A=0 | WD=0 | PC=68 | MicroInstr=18432 | Instr=0
+Note: ===== ESCRITURA A ARCHREG: A3:3 | WD3: 240=====
+Time: 985 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+Note: t=985000 ps | A=240 | WD=0 | PC=5 | MicroInstr=18559 | Instr=61489
 Time: 985 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 Note: ===== ENTRADA DE RELOJ A ARCHREG =====
 Time: 995 ns  Iteration: 1  Process: /Procesador_tb/DUT/ArchivoRegistros/line__40  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-Note: t=995000 ps | A=0 | WD=0 | PC=69 | MicroInstr=18432 | Instr=0
+Note: t=995000 ps | A=10 | WD=240 | PC=6 | MicroInstr=2182 | Instr=2850
 Time: 995 ns  Iteration: 1  Process: /Procesador_tb/monitor_proc  File: /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sim_1/new/Procesador_TB.vhd
 INFO: xsimkernel Simulation Memory Usage: 299016 KB (Peak: 348348 KB), Simulation CPU Usage: 490 ms

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Control'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MemInstruc'

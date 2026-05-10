@@ -34,9 +34,9 @@ begin
         if (rising_edge(CLK)) then
             if (WE='1') then
                 MEMORIA(to_integer(unsigned(A))) <= WD; -- Escritura
-            else
-                RD <= MEMORIA(to_integer(unsigned(A))); -- Lectura
             end if;
         end if; 
     end process;
+    
+    RD <= MEMORIA(to_integer(unsigned(A))); -- Lectura
 end Behavioral;

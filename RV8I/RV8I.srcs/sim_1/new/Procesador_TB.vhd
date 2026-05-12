@@ -38,16 +38,16 @@ begin
             CLK => CLK,
             CLR => CLR,
             A   => A,
-            WD  => WD,
-            PC_OUT_TEST => TEST_PC,
-            MICRO_INSTR_TEST => MICRO_TEST,
-            INSTR_TEST => INSTR_TEST,
-            RD1_TEST => RD1_TEST,
-            RD2_TEST => RD2_TEST,
-            WD3_TEST => WD3_TEST,
-            A1_TEST => A1_TEST,
-            A2_TEST => A2_TEST,
-            A3_TEST => A3_TEST
+            WD  => WD
+            --PC_OUT_TEST => TEST_PC,
+            --MICRO_INSTR_TEST => MICRO_TEST,
+            --INSTR_TEST => INSTR_TEST,
+            --RD1_TEST => RD1_TEST,
+            --RD2_TEST => RD2_TEST,
+            --WD3_TEST => WD3_TEST,
+            --A1_TEST => A1_TEST,
+            --A2_TEST => A2_TEST,
+            --A3_TEST => A3_TEST
         );
 
     ----------------------------------------------------------------
@@ -106,10 +106,10 @@ begin
         if rising_edge(CLK) then
             report "t=" & time'image(now) &
                    " | A=" & integer'image(to_integer(unsigned(A))) &
-                   " | WD=" & integer'image(to_integer(unsigned(WD))) &
-                   " | PC=" & integer'image(to_integer(unsigned(TEST_PC))) &
-                   " | MicroInstr=" & integer'image(to_integer(unsigned(MICRO_TEST))) &
-                   " | Instr=" & integer'image(to_integer(unsigned(INSTR_TEST)));
+                   " | WD=" & integer'image(to_integer(unsigned(WD)));
+                   --" | PC=" & integer'image(to_integer(unsigned(TEST_PC))) &
+                   --" | MicroInstr=" & integer'image(to_integer(unsigned(MICRO_TEST))) &
+                   --" | Instr=" & integer'image(to_integer(unsigned(INSTR_TEST)));
         end if;
     end process;
 

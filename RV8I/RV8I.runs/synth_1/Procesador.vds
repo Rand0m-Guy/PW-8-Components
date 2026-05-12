@@ -3,27 +3,27 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat May  9 20:59:10 2026
-# Process ID         : 28283
-# Current directory  : /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.runs/synth_1
+# Start of session at: Mon May 11 12:55:37 2026
+# Process ID         : 42481
+# Current directory  : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.runs/synth_1
 # Command line       : vivado -log Procesador.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Procesador.tcl
-# Log file           : /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.runs/synth_1/Procesador.vds
-# Journal file       : /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.runs/synth_1/vivado.jou
+# Log file           : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.runs/synth_1/Procesador.vds
+# Journal file       : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.runs/synth_1/vivado.jou
 # Running On         : pop-os
 # Platform           : Pop
 # Operating System   : Pop!_OS 22.04 LTS
-# Processor Detail   : AMD Ryzen 5 9600X 6-Core Processor
-# CPU Frequency      : 5359.472 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 12
-# Host memory        : 32679 MB
-# Swap memory        : 21474 MB
-# Total Virtual      : 54153 MB
-# Available Virtual  : 45024 MB
+# Processor Detail   : Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+# CPU Frequency      : 2398.654 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16647 MB
+# Swap memory        : 20942 MB
+# Total Virtual      : 37590 MB
+# Available Virtual  : 29379 MB
 #-----------------------------------------------------------
 source Procesador.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Procesador -part xc7a100tcsg324-2
 Starting synth_design
@@ -34,101 +34,101 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 28309
+INFO: [Synth 8-7075] Helper process launched with PID 42544
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2212.453 ; gain = 484.156 ; free physical = 13911 ; free virtual = 41688
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2211.918 ; gain = 483.594 ; free physical = 814 ; free virtual = 26751
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Procesador' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:35]
-INFO: [Synth 8-3491] module 'Divisor' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:16' bound to instance 'DivFrecuencia' of component 'Divisor' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'Divisor' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'Procesador' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:35]
+INFO: [Synth 8-3491] module 'Divisor' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:16' bound to instance 'DivFrecuencia' of component 'Divisor' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Divisor' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:22]
 	Parameter N bound to: 100000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Divisor' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:22]
-INFO: [Synth 8-3491] module 'ArchReg' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:22' bound to instance 'ArchivoRegistros' of component 'ArchReg' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'ArchReg' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Divisor' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd:22]
+INFO: [Synth 8-3491] module 'ArchReg' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:22' bound to instance 'ArchivoRegistros' of component 'ArchReg' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'ArchReg' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:33]
 	Parameter N bound to: 8 - type: integer 
 	Parameter DIR_BITS bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ArchReg' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:33]
-INFO: [Synth 8-3491] module 'Control' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd:29' bound to instance 'UnidadControl' of component 'Control' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'Control' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ArchReg' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd:33]
+INFO: [Synth 8-3491] module 'Control' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Control.vhd:29' bound to instance 'UnidadControl' of component 'Control' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Control' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Control.vhd:45]
 	Parameter NON_R_INSTR bound to: 32 - type: integer 
 	Parameter R_INSTR bound to: 7 - type: integer 
 	Parameter SIGNAL_SIZE bound to: 15 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Control' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd:45]
-INFO: [Synth 8-3491] module 'Extensor' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:16' bound to instance 'ExtensorSigno' of component 'Extensor' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:136]
-INFO: [Synth 8-638] synthesizing module 'Extensor' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'Control' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Control.vhd:45]
+INFO: [Synth 8-3491] module 'Extensor' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:16' bound to instance 'ExtensorSigno' of component 'Extensor' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'Extensor' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:24]
 	Parameter N bound to: 8 - type: integer 
 	Parameter imm_slice bound to: 12 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'Extensor' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:24]
-INFO: [Synth 8-3491] module 'MemDatos' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:18' bound to instance 'MemoriaDatos' of component 'MemDatos' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'MemDatos' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:26]
+INFO: [Synth 8-226] default block is never used [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'Extensor' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd:24]
+INFO: [Synth 8-3491] module 'MemDatos' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:18' bound to instance 'MemoriaDatos' of component 'MemDatos' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'MemDatos' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:26]
 	Parameter N bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MemDatos' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:26]
-INFO: [Synth 8-3491] module 'MemInstruc' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:16' bound to instance 'MemoriaInstruccion' of component 'MemInstruc' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'MemInstruc' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'MemDatos' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd:26]
+INFO: [Synth 8-3491] module 'MemInstruc' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:16' bound to instance 'MemoriaInstruccion' of component 'MemInstruc' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'MemInstruc' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:25]
 	Parameter N bound to: 8 - type: integer 
 	Parameter INSTR_SIZE bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'MemInstruc' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:25]
-INFO: [Synth 8-3491] module 'PC_pw8' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:17' bound to instance 'PC' of component 'PC_pw8' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'PC_pw8' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'MemInstruc' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd:25]
+INFO: [Synth 8-3491] module 'PC_pw8' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:17' bound to instance 'PC' of component 'PC_pw8' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'PC_pw8' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:26]
 	Parameter N bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PC_pw8' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:26]
-INFO: [Synth 8-3491] module 'alu_pw8' declared at '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:17' bound to instance 'ALU' of component 'alu_pw8' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'alu_pw8' [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'PC_pw8' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd:26]
+INFO: [Synth 8-3491] module 'alu_pw8' declared at '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:17' bound to instance 'ALU' of component 'alu_pw8' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'alu_pw8' [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:26]
 	Parameter N bound to: 8 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'alu_pw8' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'Procesador' (0#1) [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:35]
+INFO: [Synth 8-226] default block is never used [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'alu_pw8' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Procesador' (0#1) [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd:35]
 WARNING: [Synth 8-7129] Port imm[3] in module Extensor is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLK in module Control is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2299.422 ; gain = 571.125 ; free physical = 13809 ; free virtual = 41586
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2298.887 ; gain = 570.562 ; free physical = 751 ; free virtual = 26691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2314.266 ; gain = 585.969 ; free physical = 13807 ; free virtual = 41585
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2316.699 ; gain = 588.375 ; free physical = 751 ; free virtual = 26691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2314.266 ; gain = 585.969 ; free physical = 13807 ; free virtual = 41585
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2316.699 ; gain = 588.375 ; free physical = 751 ; free virtual = 26691
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2314.266 ; gain = 0.000 ; free physical = 13807 ; free virtual = 41585
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.699 ; gain = 0.000 ; free physical = 751 ; free virtual = 26691
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
-Finished Parsing XDC File [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Procesador_propImpl.xdc].
+Parsing XDC File [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
+Finished Parsing XDC File [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Procesador_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Procesador_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2416.004 ; gain = 0.000 ; free physical = 13783 ; free virtual = 41575
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2416.438 ; gain = 0.000 ; free physical = 770 ; free virtual = 26708
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2416.039 ; gain = 0.000 ; free physical = 13783 ; free virtual = 41575
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2416.473 ; gain = 0.000 ; free physical = 770 ; free virtual = 26708
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2416.039 ; gain = 687.742 ; free physical = 13785 ; free virtual = 41577
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2416.473 ; gain = 688.148 ; free physical = 813 ; free virtual = 26751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2424.008 ; gain = 695.711 ; free physical = 13785 ; free virtual = 41577
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2424.441 ; gain = 696.117 ; free physical = 813 ; free virtual = 26751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2424.008 ; gain = 695.711 ; free physical = 13785 ; free virtual = 41577
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2424.441 ; gain = 696.117 ; free physical = 813 ; free virtual = 26751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2424.008 ; gain = 695.711 ; free physical = 13783 ; free virtual = 41576
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2424.441 ; gain = 696.117 ; free physical = 813 ; free virtual = 26751
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -140,10 +140,9 @@ Detailed RTL Component Info :
 +---XORs : 
 	   2 Input      8 Bit         XORs := 1     
 +---Registers : 
-	                8 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---RAMs : 
-	               2K Bit	(256 X 8 bit)          RAMs := 1     
 	               64 Bit	(8 X 8 bit)          RAMs := 1     
 +---Muxes : 
 	   7 Input   15 Bit        Muxes := 1     
@@ -168,11 +167,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3917] design Procesador has port A[7] driven by constant 0
-WARNING: [Synth 8-3917] design Procesador has port A[6] driven by constant 0
-WARNING: [Synth 8-3917] design Procesador has port A[5] driven by constant 0
-WARNING: [Synth 8-3917] design Procesador has port A[3] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2424.008 ; gain = 695.711 ; free physical = 13756 ; free virtual = 41556
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2424.441 ; gain = 696.117 ; free physical = 790 ; free virtual = 26733
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -193,13 +189,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2483.008 ; gain = 754.711 ; free physical = 13686 ; free virtual = 41493
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2485.441 ; gain = 757.117 ; free physical = 695 ; free virtual = 26638
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2503.039 ; gain = 774.742 ; free physical = 13664 ; free virtual = 41470
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2505.473 ; gain = 777.148 ; free physical = 672 ; free virtual = 26615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -219,7 +215,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2503.039 ; gain = 774.742 ; free physical = 13664 ; free virtual = 41470
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2505.473 ; gain = 777.148 ; free physical = 672 ; free virtual = 26615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -237,37 +233,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -284,13 +280,13 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |     9|
+|2     |CARRY4   |    11|
 |3     |LUT1     |     1|
-|4     |LUT2     |     2|
-|5     |LUT3     |     8|
+|4     |LUT2     |    11|
+|5     |LUT3     |     7|
 |6     |LUT4     |     9|
-|7     |LUT5     |    13|
-|8     |LUT6     |    14|
+|7     |LUT5     |    29|
+|8     |LUT6     |    30|
 |9     |RAM32M   |     2|
 |10    |RAM32X1D |     4|
 |11    |FDCE     |    28|
@@ -299,31 +295,31 @@ Report Cell Usage:
 |14    |OBUF     |    16|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.852 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.285 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2679.852 ; gain = 849.781 ; free physical = 13509 ; free virtual = 41316
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2679.859 ; gain = 951.555 ; free physical = 13509 ; free virtual = 41316
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 2682.285 ; gain = 854.188 ; free physical = 527 ; free virtual = 26470
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2682.293 ; gain = 953.961 ; free physical = 527 ; free virtual = 26470
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2679.859 ; gain = 0.000 ; free physical = 13519 ; free virtual = 41326
-INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2682.293 ; gain = 0.000 ; free physical = 527 ; free virtual = 26470
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2735.879 ; gain = 0.000 ; free physical = 13685 ; free virtual = 41492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2738.312 ; gain = 0.000 ; free physical = 673 ; free virtual = 26616
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: 1be67a34
+Synth Design complete | Checksum: 382d6f4c
 INFO: [Common 17-83] Releasing license: Synthesis
-49 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2735.914 ; gain = 1103.953 ; free physical = 13685 ; free virtual = 41492
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1956.969; main = 1802.545; forked = 280.765
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3618.141; main = 2735.883; forked = 1024.098
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2759.891 ; gain = 0.000 ; free physical = 13685 ; free virtual = 41492
-INFO: [Common 17-1381] The checkpoint '/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.runs/synth_1/Procesador.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:49 . Memory (MB): peak = 2738.348 ; gain = 1118.328 ; free physical = 673 ; free virtual = 26616
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2025.907; main = 1810.735; forked = 281.481
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3676.574; main = 2738.316; forked = 1024.098
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2762.324 ; gain = 0.000 ; free physical = 673 ; free virtual = 26616
+INFO: [Common 17-1381] The checkpoint '/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.runs/synth_1/Procesador.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file Procesador_utilization_synth.rpt -pb Procesador_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May  9 20:59:25 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon May 11 12:56:34 2026...

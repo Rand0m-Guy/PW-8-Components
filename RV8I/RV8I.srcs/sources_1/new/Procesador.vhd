@@ -21,19 +21,19 @@ entity Procesador is
         INSTR_SIZE : INTEGER := 16;
         Imm_Slice : INTEGER := 12
      ); 
-    Port ( CLK, CLR : in STD_LOGIC;
-           A, WD : inout STD_LOGIC_VECTOR (N-1 downto 0);
-           PC_OUT_TEST : out STD_LOGIC_VECTOR (N-1 downto 0);
-           MICRO_INSTR_TEST: out STD_LOGIC_VECTOR (14 downto 0);
-           INSTR_TEST : out STD_LOGIC_VECTOR (15 downto 0);
-           RD1_TEST, RD2_TEST : out std_logic_vector (7 downto 0);
-           A1_TEST, A2_TEST, A3_TEST : out std_logic_vector (2 downto 0);
-           WD3_TEST : out std_logic_vector (7 downto 0)
+    Port ( OSC_CLK, CLR : in STD_LOGIC;
+           A, WD : inout STD_LOGIC_VECTOR (N-1 downto 0)
+           --PC_OUT_TEST : out STD_LOGIC_VECTOR (N-1 downto 0);
+           --MICRO_INSTR_TEST: out STD_LOGIC_VECTOR (14 downto 0);
+           --INSTR_TEST : out STD_LOGIC_VECTOR (15 downto 0);
+           --RD1_TEST, RD2_TEST : out std_logic_vector (7 downto 0);
+           --A1_TEST, A2_TEST, A3_TEST : out std_logic_vector (2 downto 0);
+           --WD3_TEST : out std_logic_vector (7 downto 0)
            );
 end Procesador;
 
 architecture Behavioral of Procesador is
-    --signal CLK : STD_LOGIC;
+    signal CLK : STD_LOGIC;
     signal Instr : STD_LOGIC_VECTOR(INSTR_SIZE-1 downto 0);
     
     signal RD1, RD2 : STD_LOGIC_VECTOR(N-1 downto 0);
@@ -71,15 +71,15 @@ begin
     end process;
     
     -- TEST
-    PC_OUT_TEST <= PC_Out;
-    MICRO_INSTR_TEST <= RegWrite & WriteSel & PCCLR & PCLD & PCSrc & ResultSrc & MemWrite & ALUCtrl & ALUSrc & ImmSrc;
-    INSTR_TEST <= Instr;
-    RD1_TEST <= RD1;
-    RD2_TEST <= RD2;
-    WD3_TEST <= muxToWD3;
-    A1_TEST  <= Instr(10 downto 8);
-    A2_TEST  <= Instr(13 downto 11);
-    A3_TEST  <= Instr(6 downto 4);
+    --PC_OUT_TEST <= PC_Out;
+    --MICRO_INSTR_TEST <= RegWrite & WriteSel & PCCLR & PCLD & PCSrc & ResultSrc & MemWrite & ALUCtrl & ALUSrc & ImmSrc;
+    --INSTR_TEST <= Instr;
+    --RD1_TEST <= RD1;
+    --RD2_TEST <= RD2;
+    --WD3_TEST <= muxToWD3;
+    --A1_TEST  <= Instr(10 downto 8);
+    --A2_TEST  <= Instr(13 downto 11);
+    --A3_TEST  <= Instr(6 downto 4);
     
     
     A <= ImmExt;
@@ -98,11 +98,11 @@ begin
     
     response <= ALURes when ResultSrc = '0' else DataMem_Out;
     
-    --DivFrecuencia : Divisor PORT MAP (
-    --    OSC_CLK => OSC_CLK,
-    --    CLR => CLR,
-    --    CLK => CLK
-    --);
+    DivFrecuencia : Divisor PORT MAP (
+        OSC_CLK => OSC_CLK,
+        CLR => CLR,
+        CLK => CLK
+    );
     
     ArchivoRegistros : ArchReg PORT MAP (
         CLK => CLK,

@@ -1,102 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1778381970">
-  <File Type="NOC_SOLUTION_FILE" Name="Procesador.ncr"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="Procesador.nts"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1778525733">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Procesador_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="Procesador_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="Procesador.vdi"/>
+  <File Type="BG-DRC" Name="Procesador.drc"/>
+  <File Type="BG-BGN" Name="Procesador.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Procesador.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Procesador.ltx"/>
+  <File Type="PL-LTX-FILE" Name="Procesador_pld.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="Procesador_boot.ltx"/>
+  <File Type="LTX-FILE" Name="Procesador.ltx"/>
+  <File Type="PL-BIF-FILE" Name="Procesador_pld.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="Procesador_boot.bif"/>
+  <File Type="BIF-FILE" Name="Procesador.bif"/>
+  <File Type="MMI-FILE" Name="Procesador.mmi"/>
+  <File Type="RBD_FILE" Name="Procesador.rbd"/>
+  <File Type="NPI_FILE" Name="Procesador.npi"/>
   <File Type="PL_UNMASK_RCDO_FILE" Name="Procesador_pld_unmask.rcdo"/>
   <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="Procesador_pld_unmask_markers.rcdo"/>
   <File Type="PL_MASK_RCDO_FILE" Name="Procesador_pld_mask.rcdo"/>
   <File Type="PL_MARKER_RCDO_FILE" Name="Procesador_pld_markers.rcdo"/>
   <File Type="PL-CLEAR-RCDO-FILE" Name="Procesador_pld_clear.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="Procesador_pld.rcdo"/>
   <File Type="PL_UNMASK_RNPI_FILE" Name="Procesador_pld_unmask.rnpi"/>
   <File Type="PL_SHUTDOWN_RNPI_FILE" Name="Procesador_pld_shutdown.rnpi"/>
   <File Type="PL_MASK_RNPI_FILE" Name="Procesador_pld_mask.rnpi"/>
   <File Type="PL_MARKER_RNPI_FILE" Name="Procesador_pld_markers.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="Procesador_boot_markers.rnpi"/>
   <File Type="PL_RNPI_FILE" Name="Procesador_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="Procesador_boot_markers.rnpi"/>
   <File Type="BOOT_RNPI_FILE" Name="Procesador_boot.rnpi"/>
-  <File Type="MARKER-RNPI-FILE" Name="Procesador_markers.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="Procesador_pld.rcdo"/>
   <File Type="MARKER-RCDO-FILE" Name="Procesador_markers.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="Procesador_markers.rnpi"/>
   <File Type="RCDO-FILE" Name="Procesador.rcdo"/>
-  <File Type="PL-LTX-FILE" Name="Procesador_pld.ltx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Procesador_timing_summary_postroute_physopted.rpx"/>
+  <File Type="RNPI_FILE" Name="Procesador.rnpi"/>
+  <File Type="CFI_FILE" Name="Procesador.cfi"/>
+  <File Type="RCFI_FILE" Name="Procesador.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="Procesador_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Procesador_boot.pdi"/>
+  <File Type="PDI-FILE" Name="Procesador.pdi"/>
+  <File Type="BITSTR-MMI" Name="Procesador.mmi"/>
+  <File Type="BITSTR-BMM" Name="Procesador_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Procesador.nky"/>
+  <File Type="BITSTR-RBT" Name="Procesador.rbt"/>
   <File Type="BITSTR-MSK" Name="Procesador.msk"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Procesador_bus_skew_routed.pb"/>
+  <File Type="BG-BIN" Name="Procesador.bin"/>
+  <File Type="BG-BIT" Name="Procesador.bit"/>
+  <File Type="NOC_SOLUTION_FILE" Name="Procesador.ncr"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="Procesador.nts"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Procesador_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Procesador_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Procesador_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Procesador_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Procesador_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Procesador_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Procesador_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Procesador_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="Procesador_rqs_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Procesador_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Procesador_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW" Name="Procesador_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Procesador_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="Procesador_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Procesador_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Procesador_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Procesador_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC" Name="Procesador_drc_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="Procesador_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Procesador_power_routed.rpx"/>
-  <File Type="ROUTE-PWR" Name="Procesador_power_routed.rpt"/>
-  <File Type="BG-DRC" Name="Procesador.drc"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Procesador_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Procesador_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Procesador_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Procesador_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="Procesador_route_status.rpt"/>
-  <File Type="BITSTR-BMM" Name="Procesador_bd.bmm"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Procesador_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Procesador_timing_summary_routed.rpt"/>
-  <File Type="BG-BGN" Name="Procesador.bgn"/>
+  <File Type="ROUTE-PWR-RPX" Name="Procesador_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Procesador_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Procesador_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Procesador_methodology_drc_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="Procesador_reports.tcl"/>
-  <File Type="PA-TCL" Name="Procesador.tcl"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Procesador_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Procesador_methodology_drc_routed.rpt"/>
-  <File Type="PLACE-CTRL" Name="Procesador_control_sets_placed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Procesador_timing_summary_postroute_physopted.rpt"/>
-  <File Type="BITSTR-MMI" Name="Procesador.mmi"/>
-  <File Type="BITSTR-NKY" Name="Procesador.nky"/>
-  <File Type="PLACE-UTIL" Name="Procesador_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Procesador_utilization_placed.pb"/>
-  <File Type="OPT-DRC" Name="Procesador_drc_opted.rpt"/>
-  <File Type="PLACE-IO" Name="Procesador_io_placed.rpt"/>
-  <File Type="BG-BIN" Name="Procesador.bin"/>
-  <File Type="BITSTR-RBT" Name="Procesador.rbt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Procesador_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Procesador_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Procesador_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Procesador_bus_skew_postroute_physopted.pb"/>
-  <File Type="RDI-RDI" Name="Procesador.vdi"/>
-  <File Type="PDI-FILE" Name="Procesador.pdi"/>
-  <File Type="BG-BIT" Name="Procesador.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="Procesador.sysdef"/>
-  <File Type="MMI-FILE" Name="Procesador.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Procesador.ltx"/>
-  <File Type="BIF-FILE" Name="Procesador.bif"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BOOT-LTX-FILE" Name="Procesador_boot.ltx"/>
-  <File Type="OPT-HWDEF" Name="Procesador.hwdef"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Procesador_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Procesador_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Procesador_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Procesador_drc_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="Procesador_utilization_routed.pb"/>
+  <File Type="ROUTE-UTIL" Name="Procesador_utilization_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Procesador_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="Procesador_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="Procesador_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Procesador_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="Procesador_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="Procesador_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="Procesador_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="Procesador_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Procesador_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Procesador_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Procesador_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Procesador_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Procesador_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Procesador_postroute_physopt_bb.dcp"/>
-  <File Type="BOOT-PDI-FILE" Name="Procesador_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="Procesador_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="Procesador.rcfi"/>
-  <File Type="CFI_FILE" Name="Procesador.cfi"/>
-  <File Type="RNPI_FILE" Name="Procesador.rnpi"/>
-  <File Type="NPI_FILE" Name="Procesador.npi"/>
-  <File Type="RBD_FILE" Name="Procesador.rbd"/>
-  <File Type="ROUTE-RQS" Name="Procesador_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Procesador_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="BOOT-BIF-FILE" Name="Procesador_boot.bif"/>
-  <File Type="PL-BIF-FILE" Name="Procesador_pld.bif"/>
-  <File Type="LTX-FILE" Name="Procesador.ltx"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Procesador_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Procesador_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="Procesador_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="Procesador_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Procesador_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Procesador_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Procesador_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Procesador_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Procesador_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Procesador_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Procesador_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Procesador_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Procesador_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Procesador_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Procesador_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="Procesador_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="Procesador_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Procesador.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Procesador_methodology_drc_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="Procesador_utilization_opted.pb"/>
+  <File Type="OPT-UTIL" Name="Procesador_utilization_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Procesador_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Procesador_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Procesador_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="Procesador_reports.tcl"/>
+  <File Type="PA-TCL" Name="Procesador.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SegmentDisplay.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ArchReg.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -200,6 +225,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

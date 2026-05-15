@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Thu May 14 23:30:14 2026
+| Date         : Fri May 15 14:10:16 2026
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_control_sets -verbose -file Procesador_control_sets_placed.rpt
 | Design       : Procesador
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     4 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     8 |
+| Unused register locations in slices containing registers |    15 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -59,8 +59,8 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              20 |            7 |
-| No           | No                    | Yes                    |              28 |            8 |
-| No           | Yes                   | No                     |               8 |            4 |
+| No           | No                    | Yes                    |              37 |           13 |
+| No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -73,7 +73,7 @@ Table of Contents
 +-------------------------+---------------+------------------+------------------+----------------+--------------+
 |       Clock Signal      | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------------+---------------+------------------+------------------+----------------+--------------+
-|  DivFrecuencia/CLK_BUFG |               | PCCLR_reg_n_0    |                4 |              8 |         2.00 |
+|  DivFrecuencia/CLK_BUFG |               | PCCLR_reg_n_0    |                5 |              9 |         1.80 |
 |  OSC_CLK_IBUF_BUFG      |               |                  |                7 |             20 |         2.86 |
 |  DivFrecuencia/CLK_BUFG | PC/p_0_in     |                  |                3 |             24 |         8.00 |
 |  OSC_CLK_IBUF_BUFG      |               | PCCLR_reg_n_0    |                8 |             28 |         3.50 |

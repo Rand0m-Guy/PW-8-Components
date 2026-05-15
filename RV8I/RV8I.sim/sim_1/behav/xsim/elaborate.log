@@ -14,6 +14,7 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package xil_defaultlib.paquete
 Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.Divisor [divisor_default]
 Compiling architecture comportamiento of entity xil_defaultlib.ArchReg [archreg_default]
 Compiling architecture behavioral of entity xil_defaultlib.Control [control_default]
 Compiling architecture extender of entity xil_defaultlib.Extensor [extensor_default]
@@ -22,6 +23,7 @@ Compiling architecture behavioral of entity xil_defaultlib.MemInstruc [meminstru
 Compiling architecture behavioral of entity xil_defaultlib.PC_pw8 [pc_pw8_default]
 Compiling architecture alu of entity xil_defaultlib.alu_pw8 [alu_pw8_default]
 Compiling architecture behavioral of entity xil_defaultlib.BCDConverter [bcdconverter_default]
+Compiling architecture behavioral of entity xil_defaultlib.BCDTo7Seg [bcdto7seg_default]
 Compiling architecture behavioral of entity xil_defaultlib.Procesador [procesador_default]
 Compiling architecture behavioral of entity xil_defaultlib.procesador_tb
 Built simulation snapshot Procesador_tb_behav

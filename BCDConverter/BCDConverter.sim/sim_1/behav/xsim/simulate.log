@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Note: All BCDConverter tests passed!
+Time: 80 ns  Iteration: 0  Process: /BCDConverter_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/BCDConverter/BCDConverter.srcs/sim_1/new/BCD_TB.vhd
+INFO: xsimkernel Simulation Memory Usage: 298960 KB (Peak: 348292 KB), Simulation CPU Usage: 480 ms

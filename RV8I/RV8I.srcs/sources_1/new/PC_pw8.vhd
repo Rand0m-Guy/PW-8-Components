@@ -24,21 +24,19 @@ generic(N:integer:=8);
 end PC_pw8;
 
 architecture Behavioral of PC_pw8 is
-    -- signal clr_hold : std_logic;
+    signal clr_hold : STD_LOGIC;
 begin
-    process(clk)
+    process(clk, clr)
     begin
-        if rising_edge(clk) then
-            if clr = '1' then
+        if CLR = '1' then
+            PC_out <= (others => '0');
+            clr_hold <= '1';
+        elsif rising_edge(clk) then
+            if clr_hold = '1' then
                 PC_out <= (others => '0');
-                -- clr_hold <= '1';
-            elsif ld = '1' then
-                -- if clr_hold = '1' then
-                --    PC_out <= (others => '0');
---                    clr_hold <= '0';
---                else
-                    PC_out <= PCNext;
---                end if;
+                clr_hold <= '0';
+            elsif ld = '1' then 
+                PC_out <= PCNext;
             end if;
         end if;
     end process;

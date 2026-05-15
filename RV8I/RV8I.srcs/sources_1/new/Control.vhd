@@ -6,7 +6,6 @@
             -- NON_R_INSTR (generic constant): Número de instrucciones que no sean de tipo R
             -- R_INSTR (generic constant): Número de instrucciones de tipo R
             -- SIGNAL_SIZE (generic constant): Número de señales a generar
-            -- CLK (in): Señal de reloj
             -- Opcode (in): Código de operación de la instrucción
             -- Funct1, Funct2 (in): Códigos de función de la instrucción (ver formato de instrucción)
             -- Zero (in): Señal que indica si el resultado de la ALU es 0
@@ -32,8 +31,7 @@ entity Control is
         R_INSTR : integer := 7;
         SIGNAL_SIZE : integer := 15
     );
-    Port ( CLK : in STD_LOGIC;
-           Opcode : in STD_LOGIC_VECTOR (3 downto 0);
+    Port ( Opcode : in STD_LOGIC_VECTOR (3 downto 0);
            Funct1 : in STD_LOGIC;
            Funct2 : in STD_LOGIC_VECTOR (1 downto 0);
            Zero : in STD_LOGIC;

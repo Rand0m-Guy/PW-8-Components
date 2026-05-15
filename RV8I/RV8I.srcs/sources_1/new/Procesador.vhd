@@ -107,7 +107,6 @@ begin
     );
     
     UnidadControl : Control PORT MAP(
-        CLK       => CLK,
         Opcode    => Instr(3 downto 0),
         Funct1    => Instr(7),
         Funct2    => Instr(15 downto 14),

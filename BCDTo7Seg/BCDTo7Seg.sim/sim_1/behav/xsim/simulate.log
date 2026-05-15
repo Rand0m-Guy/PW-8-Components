@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Note: All BCDTo7Seg tests passed!
+Time: 76 ns  Iteration: 0  Process: /BCDTo7Seg_tb/stim_proc  File: /home/randomguy/Documents/School/TT/Vivado/BCDTo7Seg/BCDTo7Seg.srcs/sim_1/new/BCDTo7Seg_TB.vhd
+INFO: xsimkernel Simulation Memory Usage: 294848 KB (Peak: 348280 KB), Simulation CPU Usage: 490 ms

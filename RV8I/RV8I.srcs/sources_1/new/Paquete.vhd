@@ -27,8 +27,7 @@ package Paquete is
             R_INSTR : integer := 7;
             SIGNAL_SIZE : integer := 15
         );
-        Port ( CLK : in STD_LOGIC;
-               Opcode : in STD_LOGIC_VECTOR (3 downto 0);
+        Port ( Opcode : in STD_LOGIC_VECTOR (3 downto 0);
                Funct1 : in STD_LOGIC;
                Funct2 : in STD_LOGIC_VECTOR (1 downto 0);
                Zero : in STD_LOGIC;

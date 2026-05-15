@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "BCDConverter_tb_behav" "xil_defaultlib.BCDConverter_tb" -log "elaborate.log" 

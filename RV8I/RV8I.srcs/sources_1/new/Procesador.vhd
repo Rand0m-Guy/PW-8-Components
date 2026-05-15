@@ -22,13 +22,9 @@ entity Procesador is
         Imm_Slice : INTEGER := 12
      ); 
     Port ( OSC_CLK, CLR : in STD_LOGIC;
-           A, WD : inout STD_LOGIC_VECTOR (N-1 downto 0)
-           --PC_OUT_TEST : out STD_LOGIC_VECTOR (N-1 downto 0);
-           --MICRO_INSTR_TEST: out STD_LOGIC_VECTOR (14 downto 0);
-           --INSTR_TEST : out STD_LOGIC_VECTOR (15 downto 0);
-           --RD1_TEST, RD2_TEST : out std_logic_vector (7 downto 0);
-           --A1_TEST, A2_TEST, A3_TEST : out std_logic_vector (2 downto 0);
-           --WD3_TEST : out std_logic_vector (7 downto 0)
+           DISP_SEL : out STD_LOGIC_VECTOR(7 downto 0);
+           DISP_VAL : out STD_LOGIC_VECTOR(6 downto 0);
+           INS_INDICATOR : out STD_LOGIC
            );
 end Procesador;
 
@@ -62,35 +58,30 @@ architecture Behavioral of Procesador is
     
     -- PCCLR push button
     signal trashSignal : STD_LOGIC;
+    
+    -- Parámetros de salidas
+    constant isVAL1Signed : std_logic := '0';
+    constant isVAL2Signed : std_logic := '1';
+    signal val1_2, val1_1, val1_0 : STD_LOGIC_VECTOR(3 downto 0);
+    signal val2_2, val2_1, val2_0 : STD_LOGIC_VECTOR(3 downto 0);
+    signal isVal1_N, isVal2_N : std_logic;
 begin
     
-    process(CLK, CLR) begin
-        if(rising_edge(CLK)) then
+    process(OSC_CLK) begin
+        if(rising_edge(OSC_CLK)) then
             PCCLR <= CLR;
+            -- report ("PCOut: " & integer'image(to_integer(unsigned(PC_Out))) &
+           -- "PCPlus: " & integer'image(to_integer(unsigned(PCPlus)))) severity note;
         end if;
     end process;
-    
-    -- TEST
-    --PC_OUT_TEST <= PC_Out;
-    --MICRO_INSTR_TEST <= RegWrite & WriteSel & PCCLR & PCLD & PCSrc & ResultSrc & MemWrite & ALUCtrl & ALUSrc & ImmSrc;
-    --INSTR_TEST <= Instr;
-    --RD1_TEST <= RD1;
-    --RD2_TEST <= RD2;
-    --WD3_TEST <= muxToWD3;
-    --A1_TEST  <= Instr(10 downto 8);
-    --A2_TEST  <= Instr(13 downto 11);
-    --A3_TEST  <= Instr(6 downto 4);
-    
-    
-    A <= ImmExt;
-    WD <= RD1;
     
     PCPlus <= std_logic_vector(unsigned(PC_Out) + 1);
     PCTarget <= std_logic_vector(signed(PC_Out) + signed(ImmExt));
     
     muxToWD3 <= response WHEN WriteSel = '0' ELSE PCPlus;
     
-    muxToPCNext <= PCPlus WHEN PCSrc = "00" ELSE
+    muxToPCNext <= (others => '0') WHEN PCCLR = '1' ELSE
+             PCPlus WHEN PCSrc = "00" ELSE
              PCTarget When PCSrc = "01" ELSE
              ALURes when PCSrc = "10" ELSE (others => '0');
     
@@ -100,7 +91,7 @@ begin
     
     DivFrecuencia : Divisor PORT MAP (
         OSC_CLK => OSC_CLK,
-        CLR => CLR,
+        CLR => PCCLR,
         CLK => CLK
     );
     
@@ -161,10 +152,42 @@ begin
     );
     
     ALU : alu_pw8 PORT MAP(
-        A        => RD1,
+        A        => RD1, 
         B        => muxToAlu,
         ALU_ctrl => ALUCtrl,
         zero     => Zero,
         ALURes   => ALURes
     );
+    
+    -- ======== CONTROLES DE SALIDA ========
+    BCDConv : BCDConverter PORT MAP (
+        VAL1   => ImmExt, 
+        VAL2   => RD1,
+        ISSIG1 => isVAL1Signed,
+        ISSIG2 => isVAL2Signed,
+        S11    => val1_2,
+        S12    => val1_1,
+        S13    => val1_0,
+        S21    => val2_2,
+        S22    => val2_1,
+        S23    => val2_0,
+        SIGN1  => isVal1_N,
+        SIGN2  => isVal2_N
+    );
+    
+    BCDTo7SegC : BCDTo7Seg PORT MAP (
+        CLK        => OSC_CLK,
+        val1_2     => val1_2,
+        val1_1     => val1_1,
+        val1_0     => val1_0,
+        val2_2     => val2_2,
+        val2_1     => val2_1,
+        val2_0     => val2_0,
+        val1_n     => isVal1_N,
+        val2_n     => isVal2_N,
+        disp_val   => DISP_VAL, 
+        disp_index => DISP_SEL
+    );
+    
+    INS_INDICATOR <= '1' WHEN (Instr(3 downto 0)) = "0010" ELSE '0'; -- Prender en store
 end Behavioral;

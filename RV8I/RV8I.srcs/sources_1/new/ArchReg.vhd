@@ -9,7 +9,7 @@
             -- WE3 (in): Determina si debe leer un registro (0) o escribir a él (1)
             -- A1,A2 (in): Registros a leer. El resultado se encuentra en RD1 y RD2 respectivamente
             -- A3 (in): Registro al que escribir si WE3 está encendido
-            -- WDE (in): Valor a escribir en el registro A3 
+            -- WDE3 (in): Valor a escribir en el registro A3 
             -- RD1, RD2 (out): Valores guardados en los registros indicados por A1 y A2 respectivamente
 ----------------------------------------------------------------------------------------------------
 
@@ -40,9 +40,7 @@ begin
     process(CLK)
     begin
         if rising_edge(CLK) then
-            report "===== ENTRADA DE RELOJ A ARCHREG =====";
             if WE3='1' and unsigned(A3) /= 0 then -- Escritura, ignorando registro 0
-                report "===== ESCRITURA A ARCHREG: A3:" & integer'image(to_integer(unsigned(A3))) & " | WD3: " & integer'image(to_integer(unsigned(WD3))) &  "=====";
                 REGISTROS(to_integer(unsigned(A3))) <= WD3;
             end if;
         end if; 

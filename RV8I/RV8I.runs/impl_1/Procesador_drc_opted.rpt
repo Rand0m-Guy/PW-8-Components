@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Mon May 11 12:57:04 2026
+| Date         : Thu May 14 23:30:13 2026
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_drc -file Procesador_drc_opted.rpt -pb Procesador_drc_opted.pb -rpx Procesador_drc_opted.rpx
 | Design       : Procesador
@@ -24,12 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 17
+             Checks found: 1
 +----------+----------+-----------------------------------------------------+--------+
 | Rule     | Severity | Description                                         | Checks |
 +----------+----------+-----------------------------------------------------+--------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
-| RPBF-3   | Warning  | IO port buffering is incomplete                     | 16     |
 +----------+----------+-----------------------------------------------------+--------+
 
 2. REPORT DETAILS
@@ -45,86 +44,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-RPBF-3#1 Warning
-IO port buffering is incomplete  
-Device port A[0] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#2 Warning
-IO port buffering is incomplete  
-Device port A[1] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#3 Warning
-IO port buffering is incomplete  
-Device port A[2] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#4 Warning
-IO port buffering is incomplete  
-Device port A[3] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#5 Warning
-IO port buffering is incomplete  
-Device port A[4] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#6 Warning
-IO port buffering is incomplete  
-Device port A[5] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#7 Warning
-IO port buffering is incomplete  
-Device port A[6] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#8 Warning
-IO port buffering is incomplete  
-Device port A[7] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#9 Warning
-IO port buffering is incomplete  
-Device port WD[0] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#10 Warning
-IO port buffering is incomplete  
-Device port WD[1] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#11 Warning
-IO port buffering is incomplete  
-Device port WD[2] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#12 Warning
-IO port buffering is incomplete  
-Device port WD[3] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#13 Warning
-IO port buffering is incomplete  
-Device port WD[4] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#14 Warning
-IO port buffering is incomplete  
-Device port WD[5] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#15 Warning
-IO port buffering is incomplete  
-Device port WD[6] expects both input and output buffering but the buffers are incomplete.
-Related violations: <none>
-
-RPBF-3#16 Warning
-IO port buffering is incomplete  
-Device port WD[7] expects both input and output buffering but the buffers are incomplete.
 Related violations: <none>
 
 

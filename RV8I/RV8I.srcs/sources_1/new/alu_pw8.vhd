@@ -7,7 +7,7 @@
             -- A, B (in): Datos a operar
             -- ALU_ctrl (in): Indica qué operación a realizar (ver tabla en manual de usuario)
             -- zero (out): 1 si el resultado de la operación es 0, 0 si no
-            -- ALURes (out): Resultado de la operación
+            -- ALURes (inout): Resultado de la operación
 ----------------------------------------------------------------------------------------------------
 
 library IEEE;

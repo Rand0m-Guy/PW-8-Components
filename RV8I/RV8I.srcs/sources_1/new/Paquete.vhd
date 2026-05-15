@@ -91,6 +91,32 @@ package Paquete is
         Port ( OSC_CLK, CLR : in STD_LOGIC;
                CLK : inout STD_LOGIC);
     end component;
+    
+    -- Convertidor binario a BCD
+    component BCDConverter is
+        generic (
+            N : INTEGER := 8;
+            SCRATCH_SPACE_SIZE : INTEGER := 20
+         ); 
+        Port ( VAL1, VAL2 : in STD_LOGIC_VECTOR (N-1 downto 0);
+               ISSIG1, ISSIG2 : in STD_LOGIC;
+               S11, S12, S13 : out STD_LOGIC_VECTOR (3 downto 0);
+               S21, S22, S23 : out STD_LOGIC_VECTOR (3 downto 0);
+               SIGN1 : out STD_LOGIC;
+               SIGN2 : out STD_LOGIC
+               );
+    end component;
+    
+    -- BCD a 7 segmentos
+    component BCDTo7Seg is
+        generic( N : integer := 50 );
+        Port ( CLK : in STD_LOGIC;
+               val1_2, val1_1, val1_0 : in STD_LOGIC_VECTOR (3 downto 0);
+               val2_2, val2_1, val2_0 : in STD_LOGIC_VECTOR (3 downto 0);
+               val1_n, val2_n : in STD_LOGIC;
+               disp_val : out STD_LOGIC_VECTOR (6 downto 0);
+               disp_index : out STD_LOGIC_VECTOR (7 downto 0));
+    end component;
 
 end Paquete;
 

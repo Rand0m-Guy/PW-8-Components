@@ -25,13 +25,13 @@ package Paquete is
         generic(
             NON_R_INSTR : integer := 32;
             R_INSTR : integer := 7;
-            SIGNAL_SIZE : integer := 15
+            SIGNAL_SIZE : integer := 13
         );
         Port ( Opcode : in STD_LOGIC_VECTOR (3 downto 0);
                Funct1 : in STD_LOGIC;
                Funct2 : in STD_LOGIC_VECTOR (1 downto 0);
                Zero : in STD_LOGIC;
-               RegWrite, WriteSel, PCCLR, PCLD, ResultSrc,MemWrite,ALUSrc : out STD_LOGIC;
+               RegWrite, WriteSel, ResultSrc,MemWrite,ALUSrc : out STD_LOGIC;
                ALUCtrl,ImmSrc : out STD_LOGIC_VECTOR (2 downto 0);
                PCSrc : out STD_LOGIC_VECTOR (1 downto 0));
     end component;
@@ -68,7 +68,6 @@ package Paquete is
     component PC_pw8 is
         generic(N:integer:=8);
         Port ( PCNext : in STD_LOGIC_VECTOR (N-1 downto 0);
-               LD : in STD_LOGIC;
                CLR : in STD_LOGIC;
                CLK : in STD_LOGIC;
                PC_out : out STD_LOGIC_VECTOR (N-1 downto 0));

@@ -57,9 +57,6 @@ architecture Behavioral of Procesador is
     signal muxToAlu : STD_LOGIC_VECTOR(N-1 downto 0);
     signal response : STD_LOGIC_VECTOR(N-1 downto 0);
     
-    -- PCCLR push button
-    signal trashSignal : STD_LOGIC;
-    
     -- Parámetros de salidas
     constant isVAL1Signed : std_logic := '0';
     constant isVAL2Signed : std_logic := '1';
@@ -112,8 +109,6 @@ begin
         Zero      => Zero,
         RegWrite  => RegWrite,
         WriteSel  => WriteSel,
-        PCCLR     => trashSignal,
-        PCLD      => PCLD,
         ResultSrc => ResultSrc,
         MemWrite  => MemWrite,
         ALUSrc    => ALUSrc,
@@ -143,7 +138,6 @@ begin
     
     PC : PC_pw8 PORT MAP(
         PCNext => muxToPCNext,
-        LD     => PCLD,
         CLR    => PCCLR,
         CLK    => CLK,
         PC_out => PC_Out

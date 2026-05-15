@@ -5,7 +5,6 @@
 -- @parameters:
             -- N (generic constant): Tamaño de señal de salida
             -- PCNext (in): Siguiente valor de memoria
-            -- LD (in): Señal que indica cuándo guardar
             -- CLR (in): Hace reset
             -- CLK (in): Señal de reloj
             -- PC_out (out): Valor de salida
@@ -17,7 +16,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PC_pw8 is
 generic(N:integer:=8);
     Port ( PCNext : in STD_LOGIC_VECTOR (N-1 downto 0);
-           LD : in STD_LOGIC;
            CLR : in STD_LOGIC;
            CLK : in STD_LOGIC;
            PC_out : out STD_LOGIC_VECTOR (N-1 downto 0));
@@ -35,7 +33,7 @@ begin
             if clr_hold = '1' then
                 PC_out <= (others => '0');
                 clr_hold <= '0';
-            elsif ld = '1' then 
+            else
                 PC_out <= PCNext;
             end if;
         end if;

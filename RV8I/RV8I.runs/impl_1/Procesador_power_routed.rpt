@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Fri May 15 14:38:36 2026
+| Date             : Fri May 15 14:53:15 2026
 | Host             : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command          : report_power -file Procesador_power_routed.rpt -pb Procesador_power_summary_routed.pb -rpx Procesador_power_routed.rpx
 | Design           : Procesador
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.001 |      230 |       --- |             --- |
-|   LUT as Logic           |     0.001 |       99 |     63400 |            0.16 |
+| Slice Logic              |     0.001 |      236 |       --- |             --- |
+|   LUT as Logic           |     0.001 |      101 |     63400 |            0.16 |
 |   LUT as Distributed RAM |    <0.001 |       12 |     19000 |            0.06 |
 |   CARRY4                 |    <0.001 |       13 |     15850 |            0.08 |
 |   Register               |    <0.001 |       57 |    126800 |            0.04 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |       10 |       --- |             --- |
-| Signals                  |     0.001 |      197 |       --- |             --- |
+| Signals                  |     0.001 |      204 |       --- |             --- |
 | I/O                      |     0.005 |       18 |       210 |            8.57 |
 | Static Power             |     0.097 |          |           |                 |
 | Total                    |     0.106 |          |           |                 |

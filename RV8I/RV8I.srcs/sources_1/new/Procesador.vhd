@@ -4,9 +4,10 @@
 -- @description: Módulo que conecta e incorpora todos los componentes individuales del procesador
 -- @parameters:
             -- OSC_CLK (in): Señal de reloj que proviene del oscilador de la tarjeta
-            -- CLR (in):     Hace reset a la memoria de instrucción
-            -- A (inout):    Dirección de memoria de datos en la que se guarda/lee un valor
-            -- WD (inout):   Valor a guardar en la memoria de datos
+            -- CLR (in): Hace reset a la memoria de instrucción
+            -- DISP_SEL (out): Selector de cuál display de 7 seg. se activará (ánodo común)
+            -- DISP_VAL (out): Valor a mostrar en el display de 7 seg. (ánodo común)
+            -- INS_INDICATOR (out): Permite marcar una instrucción específica para resaltarla en las salidas
 ----------------------------------------------------------------------------------------------------
 
 library IEEE;
@@ -70,8 +71,6 @@ begin
     process(OSC_CLK) begin
         if(rising_edge(OSC_CLK)) then
             PCCLR <= CLR;
-            -- report ("PCOut: " & integer'image(to_integer(unsigned(PC_Out))) &
-           -- "PCPlus: " & integer'image(to_integer(unsigned(PCPlus)))) severity note;
         end if;
     end process;
     

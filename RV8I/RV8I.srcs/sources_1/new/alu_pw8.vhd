@@ -45,6 +45,6 @@ begin
             when others => AluRES <= (others => '0');
        end case;
     end process;
-    -- AluRES <= res;
+    
     Zero   <= '1' when AluRES = std_logic_vector(to_unsigned(0, N)) else '0';
 end alu;

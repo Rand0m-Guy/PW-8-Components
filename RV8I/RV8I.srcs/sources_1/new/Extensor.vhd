@@ -22,7 +22,6 @@ entity Extensor is
 end Extensor;
 
 architecture Extender of Extensor is
-    -- signal vec_imm : std_logic_vector(N-1 downto 0);
 begin
 
     process(imm, immSrc)
@@ -48,7 +47,5 @@ begin
                 immExt <= (others => '0');
         end case;
     end process;
-
-    -- immExt <= vec_imm;
 
 end Extender;

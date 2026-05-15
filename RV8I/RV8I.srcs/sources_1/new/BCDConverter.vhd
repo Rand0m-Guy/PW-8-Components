@@ -50,13 +50,8 @@ begin
         variable val2SecondDigit: integer := 0;
         variable val2ThirdDigit: integer := 0;
     begin
-        --report ("VAL1: " & integer'image(to_integer(unsigned(VAL1))) &
---                "; VAL2: " & integer'image(to_integer(unsigned(VAL2))) &
---                "; SIGN1: " & std_logic'image(ISSIG1) &
---                "; SIGN2: " & std_logic'image(ISSIG2)) severity note;
         if(ISSIG1 = '1' and VAL1(VAL1'HIGH) = '1') then
             correctedV1 := std_logic_vector(to_unsigned(to_integer(unsigned(NOT(VAL1))) + 1, N));
---            report ("CORRECTION VAL1: " & integer'image(to_integer(unsigned(correctedV1)))) severity note;
         else
             correctedV1 := VAL1;
         end if;
@@ -64,7 +59,6 @@ begin
         
         if(ISSIG2 = '1' and VAL2(VAL2'HIGH) = '1') then
             correctedV2 := std_logic_vector(to_unsigned(to_integer(unsigned(NOT(VAL2))) + 1, N));
---            report ("CORRECTION VAL2: " & integer'image(to_integer(unsigned(correctedV2)))) severity note;
         else
             correctedV2 := VAL2;
         end if;

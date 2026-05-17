@@ -98,9 +98,9 @@ begin
         end loop;
         
         if VAL1 = "10000000" and ISSIG1 = '1' then
-            S11 <= "0010";
-            S12 <= "0101";
-            S13 <= "0101";
+            S11 <= "0001";
+            S12 <= "0010";
+            S13 <= "1000";
         else
             S11 <= scratchSpace1(SCRATCH_SPACE_SIZE-1 downto SCRATCH_SPACE_SIZE-4);
             S12 <= scratchSpace1(SCRATCH_SPACE_SIZE-5 downto SCRATCH_SPACE_SIZE-8);
@@ -108,9 +108,9 @@ begin
         end if;
         
         if VAL2 = "10000000" and ISSIG2 = '1' then
-            S21 <= "0010";
-            S22 <= "0101";
-            S23 <= "0101";
+            S21 <= "0001";
+            S22 <= "0010";
+            S23 <= "1000";
         else
             S21 <= scratchSpace2(SCRATCH_SPACE_SIZE-1 downto SCRATCH_SPACE_SIZE-4);
             S22 <= scratchSpace2(SCRATCH_SPACE_SIZE-5 downto SCRATCH_SPACE_SIZE-8);

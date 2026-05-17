@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Fri May 15 14:53:04 2026
+| Date         : Sat May 16 22:29:57 2026
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_control_sets -verbose -file Procesador_control_sets_placed.rpt
 | Design       : Procesador
@@ -59,7 +59,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              20 |            6 |
-| No           | No                    | Yes                    |              37 |           12 |
+| No           | No                    | Yes                    |              37 |           11 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -73,9 +73,9 @@ Table of Contents
 +-------------------------+--------------------+------------------+------------------+----------------+--------------+
 |       Clock Signal      |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------------+--------------------+------------------+------------------+----------------+--------------+
-|  DivFrecuencia/CLK_BUFG |                    | PCCLR_reg_n_0    |                4 |              9 |         2.25 |
+|  DivFrecuencia/CLK_BUFG |                    | PCCLR_reg_n_0    |                3 |              9 |         3.00 |
 |  OSC_CLK_IBUF_BUFG      |                    |                  |                6 |             20 |         3.33 |
-|  DivFrecuencia/CLK_BUFG | PC/PC_out_reg[0]_0 |                  |                3 |             24 |         8.00 |
+|  DivFrecuencia/CLK_BUFG | PC/PC_out_reg[0]_2 |                  |                3 |             24 |         8.00 |
 |  OSC_CLK_IBUF_BUFG      |                    | PCCLR_reg_n_0    |                8 |             28 |         3.50 |
 +-------------------------+--------------------+------------------+------------------+----------------+--------------+
 

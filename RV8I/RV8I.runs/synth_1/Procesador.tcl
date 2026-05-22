@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.runs/synth_1/Procesador.tcl"
+  variable script "/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.runs/synth_1/Procesador.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-2
@@ -64,27 +63,27 @@ create_project -in_memory -part xc7a100tcsg324-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.cache/wt [current_project]
-set_property parent.project_path /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.xpr [current_project]
+set_property webtalk.parent_dir /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.cache/wt [current_project]
+set_property parent.project_path /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.cache/ip [current_project]
+set_property ip_output_repo /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/BCDConverter.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/BCDTo7Seg.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Control.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Paquete.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd
-  /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/ArchReg.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/BCDConverter.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/BCDTo7Seg.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Control.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Divisor.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Extensor.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemDatos.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/MemInstruc.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/PC_pw8.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Paquete.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/alu_pw8.vhd
+  /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/sources_1/new/Procesador.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -95,12 +94,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc
-set_property used_in_implementation false [get_files /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
+read_xdc /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc
+set_property used_in_implementation false [get_files /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/constrs_1/new/ArchRes_Procesador.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/randomguy/Documents/School/TT/Vivado/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp
+read_checkpoint -auto_incremental -incremental /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/RV8I/RV8I.srcs/utils_1/imports/synth_1/Procesador.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

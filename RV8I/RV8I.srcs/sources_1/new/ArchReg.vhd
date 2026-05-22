@@ -16,8 +16,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-use IEEE.math_real."log2";
-use IEEE.math_real."floor";
 
 entity ArchReg is
     generic ( N : INTEGER := 8;

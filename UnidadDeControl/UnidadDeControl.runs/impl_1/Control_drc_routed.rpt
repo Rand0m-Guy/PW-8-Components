@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Tue Apr 28 20:51:16 2026
+| Date         : Sat May 23 20:11:23 2026
 | Host         : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command      : report_drc -file Control_drc_routed.rpt -pb Control_drc_routed.pb -rpx Control_drc_routed.rpx
 | Design       : Control

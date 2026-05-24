@@ -1,118 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1775766325">
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="MemDatos_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS" Name="MemDatos_routed.rqs"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="MemDatos.vdi"/>
-  <File Type="BG-DRC" Name="MemDatos.drc"/>
-  <File Type="BG-BGN" Name="MemDatos.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="MemDatos.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="MemDatos.ltx"/>
-  <File Type="PL-LTX-FILE" Name="MemDatos_pld.ltx"/>
-  <File Type="BOOT-LTX-FILE" Name="MemDatos_boot.ltx"/>
-  <File Type="LTX-FILE" Name="MemDatos.ltx"/>
-  <File Type="PL-BIF-FILE" Name="MemDatos_pld.bif"/>
-  <File Type="BOOT-BIF-FILE" Name="MemDatos_boot.bif"/>
-  <File Type="BIF-FILE" Name="MemDatos.bif"/>
-  <File Type="MMI-FILE" Name="MemDatos.mmi"/>
-  <File Type="RBD_FILE" Name="MemDatos.rbd"/>
-  <File Type="NPI_FILE" Name="MemDatos.npi"/>
+  <File Type="NOC_SOLUTION_FILE" Name="MemDatos.ncr"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="MemDatos.nts"/>
   <File Type="PL_UNMASK_RCDO_FILE" Name="MemDatos_pld_unmask.rcdo"/>
   <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="MemDatos_pld_unmask_markers.rcdo"/>
   <File Type="PL_MASK_RCDO_FILE" Name="MemDatos_pld_mask.rcdo"/>
   <File Type="PL_MARKER_RCDO_FILE" Name="MemDatos_pld_markers.rcdo"/>
   <File Type="PL-CLEAR-RCDO-FILE" Name="MemDatos_pld_clear.rcdo"/>
-  <File Type="PL-RCDO-FILE" Name="MemDatos_pld.rcdo"/>
   <File Type="PL_UNMASK_RNPI_FILE" Name="MemDatos_pld_unmask.rnpi"/>
   <File Type="PL_SHUTDOWN_RNPI_FILE" Name="MemDatos_pld_shutdown.rnpi"/>
   <File Type="PL_MASK_RNPI_FILE" Name="MemDatos_pld_mask.rnpi"/>
   <File Type="PL_MARKER_RNPI_FILE" Name="MemDatos_pld_markers.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="MemDatos_pld.rnpi"/>
   <File Type="BOOT_MARKER_RNPI_FILE" Name="MemDatos_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="MemDatos_pld.rnpi"/>
   <File Type="BOOT_RNPI_FILE" Name="MemDatos_boot.rnpi"/>
-  <File Type="MARKER-RCDO-FILE" Name="MemDatos_markers.rcdo"/>
   <File Type="MARKER-RNPI-FILE" Name="MemDatos_markers.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="MemDatos_pld.rcdo"/>
+  <File Type="MARKER-RCDO-FILE" Name="MemDatos_markers.rcdo"/>
   <File Type="RCDO-FILE" Name="MemDatos.rcdo"/>
-  <File Type="RNPI_FILE" Name="MemDatos.rnpi"/>
-  <File Type="CFI_FILE" Name="MemDatos.cfi"/>
-  <File Type="RCFI_FILE" Name="MemDatos.rcfi"/>
-  <File Type="PL-PDI-FILE" Name="MemDatos_pld.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="MemDatos_boot.pdi"/>
-  <File Type="PDI-FILE" Name="MemDatos.pdi"/>
-  <File Type="BITSTR-MMI" Name="MemDatos.mmi"/>
-  <File Type="BITSTR-BMM" Name="MemDatos_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="MemDatos.nky"/>
-  <File Type="BITSTR-RBT" Name="MemDatos.rbt"/>
-  <File Type="BITSTR-MSK" Name="MemDatos.msk"/>
-  <File Type="BG-BIN" Name="MemDatos.bin"/>
-  <File Type="BG-BIT" Name="MemDatos.bit"/>
-  <File Type="NOC_SOLUTION_FILE" Name="MemDatos.ncr"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="MemDatos.nts"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MemDatos_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MemDatos_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MemDatos_bus_skew_postroute_physopted.rpt"/>
+  <File Type="PL-LTX-FILE" Name="MemDatos_pld.ltx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MemDatos_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MemDatos_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MemDatos_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MemDatos_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MemDatos_postroute_physopt.dcp"/>
-  <File Type="ROUTE-RQS-PB" Name="MemDatos_rqs_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="MemDatos_bus_skew_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="MemDatos.msk"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="MemDatos_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MemDatos_bus_skew_routed.rpx"/>
   <File Type="ROUTE-BUS-SKEW" Name="MemDatos_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="MemDatos_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="MemDatos_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="MemDatos_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="MemDatos_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="MemDatos_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MemDatos_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MemDatos_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MemDatos_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC" Name="MemDatos_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="MemDatos_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MemDatos_power_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="MemDatos_power_routed.rpt"/>
+  <File Type="BG-DRC" Name="MemDatos.drc"/>
   <File Type="ROUTE-STATUS-PB" Name="MemDatos_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="MemDatos_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="MemDatos_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="MemDatos_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="MemDatos_power_routed.rpt"/>
+  <File Type="BITSTR-BMM" Name="MemDatos_bd.bmm"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MemDatos_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MemDatos_timing_summary_routed.rpt"/>
+  <File Type="BG-BGN" Name="MemDatos.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MemDatos_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MemDatos_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="MemDatos_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="MemDatos_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="MemDatos_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="MemDatos_drc_routed.rpt"/>
-  <File Type="ROUTE-UTIL-PB" Name="MemDatos_utilization_routed.pb"/>
-  <File Type="ROUTE-UTIL" Name="MemDatos_utilization_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="MemDatos_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="MemDatos_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="MemDatos_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="MemDatos_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="MemDatos_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="MemDatos_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="MemDatos_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="MemDatos_postplace_pwropt.dcp"/>
-  <File Type="PLACE-RQA-PB" Name="MemDatos_rqa_placed.pb"/>
-  <File Type="PLACE-TIMING" Name="MemDatos_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="MemDatos_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="MemDatos_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="MemDatos_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="MemDatos_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="MemDatos_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="MemDatos_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="MemDatos_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="MemDatos_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="MemDatos_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="MemDatos_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="MemDatos_pwropt.dcp"/>
-  <File Type="OPT-RQA-PB" Name="MemDatos_rqa_opted.pb"/>
-  <File Type="OPT-TIMING" Name="MemDatos_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="MemDatos.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="MemDatos_methodology_drc_opted.rpt"/>
-  <File Type="OPT-UTIL-PB" Name="MemDatos_utilization_opted.pb"/>
-  <File Type="OPT-UTIL" Name="MemDatos_utilization_opted.rpt"/>
-  <File Type="OPT-DRC" Name="MemDatos_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="MemDatos_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="MemDatos_timing_summary_init.rpt"/>
   <File Type="REPORTS-TCL" Name="MemDatos_reports.tcl"/>
   <File Type="PA-TCL" Name="MemDatos.tcl"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MemDatos_methodology_drc_routed.rpt"/>
+  <File Type="PLACE-CTRL" Name="MemDatos_control_sets_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MemDatos_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BITSTR-MMI" Name="MemDatos.mmi"/>
+  <File Type="BITSTR-NKY" Name="MemDatos.nky"/>
+  <File Type="PLACE-UTIL" Name="MemDatos_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MemDatos_utilization_placed.pb"/>
+  <File Type="OPT-DRC" Name="MemDatos_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="MemDatos_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="MemDatos.bin"/>
+  <File Type="BITSTR-RBT" Name="MemDatos.rbt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MemDatos_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MemDatos_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MemDatos_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MemDatos_bus_skew_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="MemDatos.vdi"/>
+  <File Type="PDI-FILE" Name="MemDatos.pdi"/>
+  <File Type="BG-BIT" Name="MemDatos.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="MemDatos.sysdef"/>
+  <File Type="MMI-FILE" Name="MemDatos.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MemDatos.ltx"/>
+  <File Type="BIF-FILE" Name="MemDatos.bif"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BOOT-LTX-FILE" Name="MemDatos_boot.ltx"/>
+  <File Type="OPT-HWDEF" Name="MemDatos.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MemDatos_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="MemDatos_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MemDatos_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MemDatos_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="MemDatos_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="MemDatos_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="MemDatos_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="MemDatos_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MemDatos_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="MemDatos_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MemDatos_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MemDatos_postroute_physopt_bb.dcp"/>
+  <File Type="BOOT-PDI-FILE" Name="MemDatos_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="MemDatos_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="MemDatos.rcfi"/>
+  <File Type="CFI_FILE" Name="MemDatos.cfi"/>
+  <File Type="RNPI_FILE" Name="MemDatos.rnpi"/>
+  <File Type="NPI_FILE" Name="MemDatos.npi"/>
+  <File Type="RBD_FILE" Name="MemDatos.rbd"/>
+  <File Type="ROUTE-RQS" Name="MemDatos_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="MemDatos_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="BOOT-BIF-FILE" Name="MemDatos_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="MemDatos_pld.bif"/>
+  <File Type="LTX-FILE" Name="MemDatos.ltx"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MemDatos.vhd">
@@ -164,5 +146,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

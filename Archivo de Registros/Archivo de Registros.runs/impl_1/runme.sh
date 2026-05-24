@@ -8,9 +8,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/randomguy/Documents/Vivado/2025.2/Vitis/bin:/home/randomguy/Documents/Vivado/2025.2/Vivado/ids_lite/ISE/bin/lin64:/home/randomguy/Documents/Vivado/2025.2/Vivado/bin
+  PATH=/home/randomguy/Documents/Vivado/testing/Vitis/bin:/home/randomguy/Documents/Vivado/testing/Vivado/ids_lite/ISE/bin/lin64:/home/randomguy/Documents/Vivado/testing/Vivado/bin
 else
-  PATH=/home/randomguy/Documents/Vivado/2025.2/Vitis/bin:/home/randomguy/Documents/Vivado/2025.2/Vivado/ids_lite/ISE/bin/lin64:/home/randomguy/Documents/Vivado/2025.2/Vivado/bin:$PATH
+  PATH=/home/randomguy/Documents/Vivado/testing/Vitis/bin:/home/randomguy/Documents/Vivado/testing/Vivado/ids_lite/ISE/bin/lin64:/home/randomguy/Documents/Vivado/testing/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.runs/impl_1'
+HD_PWD='/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

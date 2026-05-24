@@ -1,3 +1,4 @@
 Time resolution is 1 ps
 Note: Simulacion completada
-Time: 30 ns  Iteration: 0  Process: /tb_PC_pw8/stim  File: C:/Users/pande/Documents/PW8/PC_pw8/PC_pw8.srcs/sim_1/new/PC_pw8_tb.vhd
+Time: 30 ns  Iteration: 0  Process: /tb_PC_pw8/stim  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/PC_pw8/PC_pw8.srcs/sim_1/new/PC_pw8_tb.vhd
+INFO: xsimkernel Simulation Memory Usage: 290740 KB (Peak: 348272 KB), Simulation CPU Usage: 2080 ms

@@ -1,3 +1,16 @@
+----------------------------------------------------------------------------------------------------
+-- @module: MemDatos
+-- @authors: Macias Huerta Pablo Isaac, Pérez Bárcenas Juan Rubén
+-- @description: Memoria de Datos (esencialmente la RAM)
+-- @parameters:
+            -- N (generic constant): Número de bits de datos a guardar (así como el número de bits a direccionar en memoria)
+            -- CLK (in): Señal de reloj
+            -- WE (in): Write Enable de la memoria
+            -- A (in): Dirección de memoria en la que se guarda/lee un valor
+            -- WD (in): Valor a guardar
+            -- RD (out): Valor de memoria leído
+----------------------------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -21,9 +34,9 @@ begin
         if (rising_edge(CLK)) then
             if (WE='1') then
                 MEMORIA(to_integer(unsigned(A))) <= WD; -- Escritura
-            else
-                RD <= MEMORIA(to_integer(unsigned(A))); -- Lectura
             end if;
         end if; 
     end process;
+    
+    RD <= MEMORIA(to_integer(unsigned(A))); -- Lectura
 end Behavioral;

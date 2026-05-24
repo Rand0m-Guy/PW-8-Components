@@ -11,14 +11,14 @@ architecture tb of Extensor_tb is
 
     signal imm    : std_logic_vector(IMM_SLICE-1 downto 0);
     signal immExt : std_logic_vector(N-1 downto 0);
-    signal immSrc : std_logic_vector(1 downto 0);
+    signal immSrc : std_logic_vector(2 downto 0);
 
     component Extensor
         generic(N         : integer := 8;
                 imm_slice : integer := 12);
         Port ( imm    : in  STD_LOGIC_VECTOR (imm_slice-1 downto 0);
                immExt : out STD_LOGIC_VECTOR (N-1 downto 0);
-               immSrc : in  STD_LOGIC_VECTOR (1 downto 0));
+               immSrc : in  STD_LOGIC_VECTOR (2 downto 0));
     end component;
 
 begin
@@ -30,13 +30,13 @@ begin
     process
     begin
 
-        -- immSrc = "00" : sign_ext(imm[4:0])
-        -- imm[4]=0 -> Esperado: 00001101
+        -- immSrc = "001"
+        -- -> Esperado: 00000101
         imm    <= "000000001101";
-        immSrc <= "00";
+        immSrc <= "001";
         wait for 20 ns;
 
-        report "Simulacion completada." severity failure;
+        report "Simulacion completada." severity note;
 
     end process;
 

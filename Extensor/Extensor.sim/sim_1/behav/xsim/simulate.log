@@ -1,4 +1,102 @@
 Time resolution is 1 ps
-Failure: Simulacion completada.
-Time: 20 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
-$finish called at time : 20 ns : File "C:/Users/pande/Documents/PW8/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd" Line 39
+Note: Simulacion completada.
+Time: 20 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 40 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 60 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 80 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 100 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 120 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 140 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 160 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 180 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 200 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 220 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 240 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 260 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 280 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 300 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 320 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 340 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 360 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 380 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 400 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 420 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 440 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 460 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 480 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 500 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 520 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 540 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 560 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 580 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 600 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 620 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 640 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 660 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 680 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 700 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 720 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 740 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 760 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 780 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 800 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 820 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 840 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 860 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 880 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 900 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 920 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 940 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 960 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 980 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+Note: Simulacion completada.
+Time: 1 us  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
+INFO: xsimkernel Simulation Memory Usage: 290736 KB (Peak: 348268 KB), Simulation CPU Usage: 2080 ms

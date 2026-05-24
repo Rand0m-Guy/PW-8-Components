@@ -15,7 +15,6 @@ architecture sim of tb_PC_pw8 is
     constant T : time    := 10 ns;
 
     signal PCNext : std_logic_vector(N-1 downto 0) := (others => '0');
-    signal LD     : std_logic := '0';
     signal CLR    : std_logic := '0';
     signal CLK    : std_logic := '0';
     signal PC_out : std_logic_vector(N-1 downto 0);
@@ -27,7 +26,6 @@ begin
         generic map(N => N)
         port map(
             PCNext => PCNext,
-            LD     => LD,
             CLR    => CLR,
             CLK    => CLK,
             PC_out => PC_out
@@ -45,9 +43,9 @@ begin
     begin
         -- 1) Reset inicial: PC_out debe ser 0x00
         PCNext <= x"24";
-        LD <= '1';
         wait for T;
-        LD <= '0';
+        
+        CLR <= '1';
         wait for 2*T;
 
         report "Simulacion completada" severity note;

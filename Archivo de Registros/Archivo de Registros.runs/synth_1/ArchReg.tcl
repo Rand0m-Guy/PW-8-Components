@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.runs/synth_1/ArchReg.tcl"
+  variable script "/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.runs/synth_1/ArchReg.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,21 +57,22 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.cache/wt} [current_project]
-set_property parent.project_path {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.xpr} [current_project]
+set_property webtalk.parent_dir {/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.cache/wt} [current_project]
+set_property parent.project_path {/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.cache/ip} [current_project]
+set_property ip_output_repo {/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/sources_1/new/ArchReg.vhd}}
+read_vhdl -library xil_defaultlib {{/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.srcs/sources_1/new/ArchReg.vhd}}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -81,12 +82,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}
-set_property used_in_implementation false [get_files {{/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}]
+read_xdc {{/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}
+set_property used_in_implementation false [get_files {{/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.srcs/constrs_1/imports/Desktop/Nexys4DDR_LabRemoto_ArchReg.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {/home/randomguy/Documents/School/TT/Vivado/Archivo de Registros/Archivo de Registros.srcs/utils_1/imports/synth_1/ArchReg.dcp}
+read_checkpoint -auto_incremental -incremental {/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Archivo de Registros/Archivo de Registros.srcs/utils_1/imports/synth_1/ArchReg.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

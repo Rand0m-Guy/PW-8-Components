@@ -10,13 +10,12 @@ architecture TB of Control_tb is
     ----------------------------------------------------------------
     -- DUT Signals
     ----------------------------------------------------------------
-    signal CLK : STD_LOGIC := '0';
     signal Opcode : STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
     signal Funct1 : STD_LOGIC := '0';
     signal Funct2 : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
     signal Zero : STD_LOGIC := '0';
 
-    signal RegWrite, WriteSel, PCCLR, PCLD, ResultSrc, MemWrite, ALUSrc : STD_LOGIC;
+    signal RegWrite, WriteSel, ResultSrc, MemWrite, ALUSrc : STD_LOGIC;
     signal ALUCtrl, ImmSrc : STD_LOGIC_VECTOR (2 downto 0);
     signal PCSrc : STD_LOGIC_VECTOR (1 downto 0);
 
@@ -25,33 +24,33 @@ architecture TB of Control_tb is
     ----------------------------------------------------------------
     -- Local microcode copy (reference model)
     ----------------------------------------------------------------
-    type MATRIZ_OP is array (0 TO 31) OF STD_LOGIC_VECTOR(14 downto 0);
+    type MATRIZ_OP is array (0 TO 31) OF STD_LOGIC_VECTOR(12 downto 0);
     constant MICROCODE_OP : MATRIZ_OP := (
-        1 => "101100000000111",
-        2 => "101100001000000",
-        3 => "101100000001100",
-        4 => "101100000101100",
-        5 => "101100001011000",
-        6 => "001100000101101", -- BEQ
-        7 => "101100001001100",
-        8 => "111110000001100",
-        17 => "101100100000111",
-        19 => "101100000010000",
-        20 => "101100000111100",
-        21 => "101100001101000",
-        22 => "111110000001011",
+        1 =>  "1000001111111", -- LI
+        2 =>  "0000010000110", -- ST
+        3 =>  "1000000001100", -- ADDI
+        4 =>  "1000000101100", -- XORI
+        5 =>  "1000001011000", -- SLLI
+        6 =>  "0000000100101", -- BEQ: PCSrc indica usar siguiente instrucción por defecto. La corrección se hace en flanco de bajada
+        7 =>  "1000001001100", -- SLTI
+        8 =>  "1110000001100", -- JALR
+        17 => "1000100000111", -- LD
+        19 => "1000000011100", -- SUBI
+        20 => "1000000111100", -- ANDI
+        21 => "1000001101000", -- SRLI
+        22 => "1110001111011", -- JAL
         others => (others => '0')
     );
 
-    type MATRIZ_FUNCT is array (0 TO 6) OF STD_LOGIC_VECTOR(14 downto 0);
+    type MATRIZ_FUNCT is array (0 TO 6) OF STD_LOGIC_VECTOR(12 downto 0);
     constant MICROCODE_FUNCT : MATRIZ_FUNCT := (
-        0 => "100100000000000",
-        1 => "100100000010000",
-        2 => "100100000100000",
-        3 => "100100000110000",
-        4 => "100100001000000",
-        5 => "100100001010000",
-        6 => "100100001100000",
+        0 => "1000000000000", -- ADD
+        1 => "1000000010000", -- SUB
+        2 => "1000000100000", -- XOR
+        3 => "1000000110000", -- AND
+        4 => "1000001000000", -- SLT
+        5 => "1000001010000", -- SLL
+        6 => "1000001100000", -- SRL
         others => (others => '0')
     );
 
@@ -62,15 +61,12 @@ begin
     ----------------------------------------------------------------
     DUT: entity work.Control
         port map (
-            CLK => CLK,
             Opcode => Opcode,
             Funct1 => Funct1,
             Funct2 => Funct2,
             Zero => Zero,
             RegWrite => RegWrite,
             WriteSel => WriteSel,
-            PCCLR => PCCLR,
-            PCLD => PCLD,
             ResultSrc => ResultSrc,
             MemWrite => MemWrite,
             ALUSrc => ALUSrc,
@@ -80,24 +76,11 @@ begin
         );
 
     ----------------------------------------------------------------
-    -- CLOCK
-    ----------------------------------------------------------------
-    clk_process : process
-    begin
-        while true loop
-            CLK <= '0';
-            wait for CLK_PERIOD/2;
-            CLK <= '1';
-            wait for CLK_PERIOD/2;
-        end loop;
-    end process;
-
-    ----------------------------------------------------------------
     -- STIMULUS
     ----------------------------------------------------------------
     stim_proc: process
 
-        variable expected : STD_LOGIC_VECTOR(14 downto 0);
+        variable expected : STD_LOGIC_VECTOR(12 downto 0);
         variable idx : integer;
 
         ----------------------------------------------------------------
@@ -105,10 +88,8 @@ begin
         ----------------------------------------------------------------
         procedure CHECK_MICROCODE is
         begin
-            assert RegWrite = expected(14) severity error;
-            assert WriteSel = expected(13) severity error;
-            assert PCCLR    = expected(12) severity error;
-            assert PCLD     = expected(11) severity error;
+            assert RegWrite = expected(12) severity error;
+            assert WriteSel = expected(11) severity error;
             assert ResultSrc= expected(8)  severity error;
             assert MemWrite = expected(7)  severity error;
             assert ALUCtrl  = expected(6 downto 4) severity error;
@@ -130,12 +111,7 @@ begin
             Funct1 <= f1;
             Funct2 <= f2;
             Zero   <= z;
-
-            ------------------------------------------------------------
-            -- Rising edge check
-            ------------------------------------------------------------
-            wait until rising_edge(CLK);
-            wait for 1 ns;
+            wait for 2 ns;
 
             if op = "0000" then
                 idx := to_integer(unsigned(f2 & f1));
@@ -147,22 +123,12 @@ begin
 
             CHECK_MICROCODE;
 
-            -- PCSrc (before correction)
-            assert PCSrc = expected(10 downto 9)
-                report "PCSrc mismatch on rising edge" severity error;
-
-            ------------------------------------------------------------
-            -- Falling edge check (BEQ correction)
-            ------------------------------------------------------------
-            wait until falling_edge(CLK);
-            wait for 1 ns;
-
             if (f1 & op) = "00110" and z = '1' then
                 assert PCSrc = "01"
                     report "BEQ correction failed (PCSrc not overridden)" severity error;
             else
                 assert PCSrc = expected(10 downto 9)
-                    report "Unexpected PCSrc change on falling edge" severity error;
+                    report "Unexpected PCSrc change" severity error;
             end if;
 
         end procedure;

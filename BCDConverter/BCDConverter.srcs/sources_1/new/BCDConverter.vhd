@@ -50,13 +50,8 @@ begin
         variable val2SecondDigit: integer := 0;
         variable val2ThirdDigit: integer := 0;
     begin
-        --report ("VAL1: " & integer'image(to_integer(unsigned(VAL1))) &
---                "; VAL2: " & integer'image(to_integer(unsigned(VAL2))) &
---                "; SIGN1: " & std_logic'image(ISSIG1) &
---                "; SIGN2: " & std_logic'image(ISSIG2)) severity note;
         if(ISSIG1 = '1' and VAL1(VAL1'HIGH) = '1') then
             correctedV1 := std_logic_vector(to_unsigned(to_integer(unsigned(NOT(VAL1))) + 1, N));
---            report ("CORRECTION VAL1: " & integer'image(to_integer(unsigned(correctedV1)))) severity note;
         else
             correctedV1 := VAL1;
         end if;
@@ -64,7 +59,6 @@ begin
         
         if(ISSIG2 = '1' and VAL2(VAL2'HIGH) = '1') then
             correctedV2 := std_logic_vector(to_unsigned(to_integer(unsigned(NOT(VAL2))) + 1, N));
---            report ("CORRECTION VAL2: " & integer'image(to_integer(unsigned(correctedV2)))) severity note;
         else
             correctedV2 := VAL2;
         end if;
@@ -104,9 +98,9 @@ begin
         end loop;
         
         if VAL1 = "10000000" and ISSIG1 = '1' then
-            S11 <= "0010";
-            S12 <= "0101";
-            S13 <= "0101";
+            S11 <= "0001";
+            S12 <= "0010";
+            S13 <= "1000";
         else
             S11 <= scratchSpace1(SCRATCH_SPACE_SIZE-1 downto SCRATCH_SPACE_SIZE-4);
             S12 <= scratchSpace1(SCRATCH_SPACE_SIZE-5 downto SCRATCH_SPACE_SIZE-8);
@@ -114,9 +108,9 @@ begin
         end if;
         
         if VAL2 = "10000000" and ISSIG2 = '1' then
-            S21 <= "0010";
-            S22 <= "0101";
-            S23 <= "0101";
+            S21 <= "0001";
+            S22 <= "0010";
+            S23 <= "1000";
         else
             S21 <= scratchSpace2(SCRATCH_SPACE_SIZE-1 downto SCRATCH_SPACE_SIZE-4);
             S22 <= scratchSpace2(SCRATCH_SPACE_SIZE-5 downto SCRATCH_SPACE_SIZE-8);

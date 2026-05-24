@@ -1,2 +1,4 @@
 Time resolution is 1 ps
-INFO: xsimkernel Simulation Memory Usage: 298960 KB (Peak: 348292 KB), Simulation CPU Usage: 480 ms
+Note: All tests passed!
+Time: 280 ns  Iteration: 0  Process: /Control_tb/stim_proc  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/UnidadDeControl/UnidadDeControl.srcs/sim_1/new/Test.vhd
+INFO: xsimkernel Simulation Memory Usage: 298960 KB (Peak: 348292 KB), Simulation CPU Usage: 2070 ms

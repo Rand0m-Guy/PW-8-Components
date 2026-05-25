@@ -99,4 +99,4 @@ Note: Simulacion completada.
 Time: 980 ns  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
 Note: Simulacion completada.
 Time: 1 us  Iteration: 0  Process: /Extensor_tb/line__30  File: /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/sim_1/new/Extensor_tb.vhd
-INFO: xsimkernel Simulation Memory Usage: 290736 KB (Peak: 348268 KB), Simulation CPU Usage: 2080 ms
+INFO: xsimkernel Simulation Memory Usage: 290736 KB (Peak: 348268 KB), Simulation CPU Usage: 2060 ms

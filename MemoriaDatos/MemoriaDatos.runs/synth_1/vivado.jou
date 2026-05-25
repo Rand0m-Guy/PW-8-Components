@@ -3,22 +3,22 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Apr  9 14:24:23 2026
-# Process ID         : 10586
-# Current directory  : /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.runs/synth_1
+# Start of session at: Sun May 24 11:36:11 2026
+# Process ID         : 7843
+# Current directory  : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemoriaDatos/MemoriaDatos.runs/synth_1
 # Command line       : vivado -log MemDatos.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MemDatos.tcl
-# Log file           : /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.runs/synth_1/MemDatos.vds
-# Journal file       : /home/randomguy/Documents/School/TT/Vivado/MemoriaDatos/MemoriaDatos.runs/synth_1/vivado.jou
+# Log file           : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemoriaDatos/MemoriaDatos.runs/synth_1/MemDatos.vds
+# Journal file       : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemoriaDatos/MemoriaDatos.runs/synth_1/vivado.jou
 # Running On         : pop-os
 # Platform           : Pop
 # Operating System   : Pop!_OS 22.04 LTS
-# Processor Detail   : AMD Ryzen 5 9600X 6-Core Processor
-# CPU Frequency      : 5393.042 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 12
-# Host memory        : 32679 MB
-# Swap memory        : 21474 MB
-# Total Virtual      : 54153 MB
-# Available Virtual  : 45934 MB
+# Processor Detail   : Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+# CPU Frequency      : 2400.005 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16647 MB
+# Swap memory        : 20942 MB
+# Total Virtual      : 37590 MB
+# Available Virtual  : 31169 MB
 #-----------------------------------------------------------
 source MemDatos.tcl -notrace

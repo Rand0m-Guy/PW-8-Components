@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemoriaDatos/MemoriaDatos.srcs/sources_1/new/MemDatos.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MemDatos'
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemoriaDatos/MemoriaDatos.srcs/sim_1/new/Testing.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'MemDatos_tb'

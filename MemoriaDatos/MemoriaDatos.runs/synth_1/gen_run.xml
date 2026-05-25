@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1775766262" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MemDatos.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1779644167" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MemDatos.dcp">
+  <File Type="VDS-TIMINGSUMMARY" Name="MemDatos_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="MemDatos.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="MemDatos_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="MemDatos_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="MemDatos_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="MemDatos.vds"/>
   <File Type="REPORTS-TCL" Name="MemDatos_reports.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="MemDatos_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="MemDatos.tcl"/>
-  <File Type="RDS-UTIL" Name="MemDatos_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="MemDatos_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MemDatos.vhd">

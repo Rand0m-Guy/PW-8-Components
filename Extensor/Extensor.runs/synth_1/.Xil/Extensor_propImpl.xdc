@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/randomguy/Documents/School/TT/Vivado/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc rfile:../../../Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/Extensor/Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc rfile:../../../Extensor.srcs/constrs_1/imports/Downloads/Constr_extender.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { immExt[0] }]; #IO_L18P_T2_A24_15 Sch=led[0]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]

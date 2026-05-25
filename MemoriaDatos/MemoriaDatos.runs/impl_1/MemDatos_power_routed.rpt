@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Thu Apr  9 14:25:45 2026
+| Date             : Sun May 24 11:38:30 2026
 | Host             : pop-os running 64-bit Pop!_OS 22.04 LTS
 | Command          : report_power -file MemDatos_power_routed.rpt -pb MemDatos_power_summary_routed.pb -rpx MemDatos_power_routed.rpx
 | Design           : MemDatos
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.107        |
+| Total On-Chip Power (W)  | 0.108        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.009        |
+| Dynamic (W)              | 0.011        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -49,18 +49,18 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+--------------+-----------+----------+-----------+-----------------+
-| On-Chip      | Power (W) | Used     | Available | Utilization (%) |
-+--------------+-----------+----------+-----------+-----------------+
-| Clocks       |    <0.001 |        3 |       --- |             --- |
-| Slice Logic  |     0.000 |        2 |       --- |             --- |
-|   Others     |     0.000 |        2 |       --- |             --- |
-| Signals      |    <0.001 |       25 |       --- |             --- |
-| Block RAM    |     0.001 |      0.5 |       135 |            0.37 |
-| I/O          |     0.008 |       26 |       210 |           12.38 |
-| Static Power |     0.097 |          |           |                 |
-| Total        |     0.107 |          |           |                 |
-+--------------+-----------+----------+-----------+-----------------+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |    <0.001 |        3 |       --- |             --- |
+| Slice Logic              |    <0.001 |       56 |       --- |             --- |
+|   LUT as Distributed RAM |    <0.001 |       32 |     19000 |            0.17 |
+|   F7/F8 Muxes            |    <0.001 |       24 |     63400 |            0.04 |
+| Signals                  |    <0.001 |       25 |       --- |             --- |
+| I/O                      |     0.010 |       26 |       210 |           12.38 |
+| Static Power             |     0.097 |          |           |                 |
+| Total                    |     0.108 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,7 +138,7 @@ Table of Contents
 +----------+-----------+
 | Name     | Power (W) |
 +----------+-----------+
-| MemDatos |     0.009 |
+| MemDatos |     0.011 |
 +----------+-----------+
 
 

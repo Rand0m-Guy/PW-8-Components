@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Sat May 23 13:53:59 2026
-# Process ID         : 16267
+# Start of session at: Sun May 24 21:47:47 2026
+# Process ID         : 8413
 # Current directory  : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemInstruccion/MemInstruccion.runs/synth_1
 # Command line       : vivado -log MemInstruc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MemInstruc.tcl
 # Log file           : /home/randomguy/Desktop/Escuela/TT/Vivado/PW-8-Components/MemInstruccion/MemInstruccion.runs/synth_1/MemInstruc.vds
@@ -19,6 +19,6 @@
 # Host memory        : 16647 MB
 # Swap memory        : 20942 MB
 # Total Virtual      : 37590 MB
-# Available Virtual  : 30896 MB
+# Available Virtual  : 30859 MB
 #-----------------------------------------------------------
 source MemInstruc.tcl -notrace
